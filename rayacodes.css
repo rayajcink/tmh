@@ -1,0 +1,1400 @@
+html[data-theme="light"]{ 
+--trans3: rgba(255, 255, 255, 0.1);
+--trans4: rgba(255, 255, 255, 0.5);
+--shadow2: 0px 1px 2px rgba(0,0,0,0.3); 
+--mono-script: monotalic;
+--link2: #000;
+
+}
+html, html[data-theme="dark"]{ 
+--trans3: rgba(0, 0, 0, 0.1);
+--trans4: rgba(0, 0, 0, 0.5);
+--shadow2: 0px 1px 2px rgba(0,0,0,0.3); 
+--mono-script: monotalic;
+--link2: #fff;
+}
+
+:root {--proximaNova: proxima-nova;}
+
+
+.honey-shell{margin: 0px auto; width: 335px; background: var(--bg-1) var(--grad-2); border-radius: 7px; box-shadow: var(--temp-shadow); overflow: hidden; font-family: area-normal, sans-serif;
+}
+.honey-shell top{display: block; border-bottom: 5px solid #fff; border-image: var(--grad-5); border-image-slice: 5; height: 40px; background: var(--bg-1) var(--grad-5); color: var(--bg-1); line-height: 40px; display: flex;align-items: center; font-size:20px; padding: 15px;}
+.honey-shell top right{flex-grow: 1; text-align: right;}
+.honey-shell top right i.fa-sharp{padding-right: 10px; font-weight: 200!important}
+.honey-shell name{display: block; padding: 25px;text-align: right}
+.honey-shell name y{font-family: "kepler-3-display-variable", sans-serif; font-size: 35px;display: inline-block;line-height: 50px;  color: var(--link); font-weight: 500; border-bottom: 5px solid #fff; border-image: var(--grad-1); border-image-slice: 1; margin-top: 20px;  ;}
+.honey-shell name x{display: block; font-size: 11px; text-transform: uppercase; color: var(--text); letter-spacing: 1px;line-height:20px; text-align: right; font-weight: 900;border-bottom: 1px solid var(--bg-1); padding: 10px;}
+  .honey-shell name x i{padding-right: 10px;float: left; font-size: 20px;}
+.honey-shell messages, .honey-shell calling{padding: 30px; display: block; }
+.honey-shell messages div{max-height: 250px; display: block; paddding: 5px; overflow-y: auto;}
+.post1 .honey-shell messages div{text-align: left;}
+.post2 .honey-shell messages div {text-align: right;}
+.honey-shell messages p{background: var(--bg-1); border-radius: 7px; margin: 5px;text-align: justify; display: inline-block; margin: 5px; padding: 10px; box-shadow: var(--temp-shadow); font-size: 15px; line-height: 20px; color: var(--txt); float: left; clear: left}
+
+.post1 .honey-shell messages p{background: var(--bg-1); border-radius: 7px; margin: 5px;text-align: justify; display: inline-block; margin: 5px; padding: 10px; box-shadow: var(--temp-shadow); font-size: 15px; line-height: 20px; color: var(--txt); float: left; clear: left}
+
+.post2 .honey-shell messages p{background: var(--bg-1); border-radius: 7px; margin: 5px;text-align: justify; display: inline-block; margin: 5px; padding: 10px; box-shadow: var(--temp-shadow); font-size: 15px; line-height: 20px; color: var(--txt); float: right; clear: right}
+
+.honey-shell messages b{background: var(--grad-3); color: var(--link); background-clip: padding-box; background-size: 100% 10px; background-repeat: repeat-x; background-position: center; }
+
+.honey-shell messages img{max-width: 235px; border-radius: 7px; display: block}
+.honey-shell messages read{display: block; font-family: courier-prime; font-size: 11px; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; text-align: right; padding: 10px;}
+.honey-shell messages div p i{
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; background-image: var(--grad-1)}
+
+
+.honey-shell tagged{background: var(--bg-1); display: flex; align-items: center;padding: 15px; border-top: 5px solid #fff; border-image: var(--grad-5); border-image-slice: 5;}
+.honey-shell tagged right{font-family: "courier-prime", sans-serif; flex-grow: 1; text-align: right; font-size: 14px; text-transform: lowercase; font-weight: 500; letter-spacing: 1px; }
+.honey-shell tagged i{font-size: 20px; color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; background-image: var(--grad-1)}
+.honey-shell tagged right a{color: var(--lnk)!important}
+
+
+.honey-shell calling div{height: 250px; display: block; padding: 5px; overflow-y: auto; font-family: "area-normal"; font-size: 13px; line-height: 20px; text-align: justify;  }
+.honey-shell calling div b{font-family: "courier-prime"; font-weight: 500; background: var(--grad-3); color: var(--link); background-clip: padding-box; background-size: 100% 15px; background-repeat: repeat-x; background-position: center; font-size: 17px;}
+
+
+.sunny-shell{width: 450px; padding: 0px; border-radius: 7px; margin: 0px auto; background: var(--bg-1);  border: 1px solid var(--bdr); overflow: hidden}
+.sunny-shell sunny{display: block; background: var(--skr); padding: 0px;}
+.sunny-shell top{display: flex; gap: 10px; align-items: center; padding: 30px; background: var(--grad-3); border-bottom: 1px solid var(--bdr)}
+.sunny-shell gif{width: 50px; height: 50px; background-size: cover; background-position: center; display: block; border-radius: 7px;}
+.sunny-shell icon{border: 1px solid var(--bdr); padding: 5px; background: var(--bg-1) var(--grad-4); width: 50px; height: 50px; background-size: cover; background-position: center; display: block; border-radius: 7px;}
+
+.sunny-shell top i{font-size: 50px;}
+.sunny-shell top i:after{background: var(--grad-4); color: transparent; background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -ms-background-clip: text; }
+.sunny-shell top:before, .sunny-shell top:after{flex: 1; content:''; height: 0px; border-bottom: 1px dashed var(--bg-1)}
+
+.sunny-shell words{display: block;background: var(--bg-1); font-family: var(--sans); font-weight: 400; font-size: 15px; line-height: 20px; text-align: justify; padding: 40px; color: var(--txt)}
+.sunny-shell words i{background: var(--grad-1); color: transparent; background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -ms-background-clip: text; font-family: var(--sans); text-transform: uppercase; font-style: normal; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; font-size: 12px;display: inline; position: relative; border-bottom: 1px dotted var(--bg-4); line-height: 16px; margin-bottom: 5px;}
+
+
+
+.sunny-shell words b{background: var(--grad-2); color: var(--link); background-clip: padding-box; background-size: 100% 10px; background-repeat: repeat-x; background-position: center; font-size: 18px; font-weight: 600; font-family: var(--sans); font-style: italic; line-height: 20px; margin: 5px  }
+
+
+.sunny-shell bottom{padding: 30px; background: var(--grad-2); border-top: 1px solid var(--bdr); display: flex; gap: 10px; align-items: center; font-family: var(--sans); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; font-weight: 500; }
+.sunny-shell bottom tagged{background: var(--grad-2); padding: 10px; line-height: 100%; border-radius: 7px;}
+.sunny-shell bottom a{color: var(--link)!important; background-clip: padding-box!important;background-image: none!important }
+.sunny-shell bottom:before, .sunny-shell bottom:after{flex: 1; content:''; height: 0px; border-bottom: 1px dashed var(--bg-1) }
+.march-shell{width: 450px; padding: 0px; border-radius: 13px; margin: 0px auto; background: var(--bg-1);  box-shadow: var(--shadow1); overflow: hidden}
+.march-shell march{display: block; padding: 50px; border-top: 20px solid var(--link);border-bottom: 20px solid var(--link); border-image: var(--grad-5); border-image-slice: 20;}
+.march-shell top{display: flex; gap: 10px; align-items: center}
+.march-shell gif{width: 50px; height: 50px; background-size: cover; background-position: center; display: block; border-radius: 7px;}
+.march-shell icon{border: 1px solid var(--bdr); padding: 5px; background: var(--bg-1) var(--grad-4); width: 50px; height: 50px; background-size: cover; background-position: center; display: block; border-radius: 7px;}
+
+.march-shell top i{font-size: 50px;}
+.march-shell top i:after{background: var(--grad-4); color: transparent; background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -ms-background-clip: text; }
+.march-shell top:before, .march-shell top:after{flex: 1; content:''; height: 1px; background: var(--link)}
+
+.march-shell words{display: block; font-family: "p22-mackinac-pro", serif;
+font-weight: 400;
+font-style: normal; font-size: 14px; line-height: 20px; text-align: justify; padding: 25px 0px; color: var(--txt)}
+.march-shell words i{background: var(--grad-1); color: transparent; background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -ms-background-clip: text; font-family: var(--proximaNova); text-transform: uppercase; font-style: normal; text-transform: uppercase; font-weight: bold; letter-spacing: 1px; font-size: 12px;display: inline; position: relative; border-bottom: 1px solid var(--lnk); line-height: 16px; margin-bottom: 5px;}
+
+
+
+.march-shell words b{background: var(--grad-2); color: var(--link); background-clip: padding-box; background-size: 100% 10px; background-repeat: repeat-x; background-position: center; font-size: 24px; font-weight: 300; font-family: var(--proximaNova); font-style: italic; line-height: 20px; margin: 5px  }
+
+
+.march-shell bottom{display: flex; gap: 10px; align-items: center; font-family: var(--proximaNova); font-size: 12px; text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
+.march-shell bottom a{color: var(--link)!important; background-clip: padding-box!important; }
+.march-shell bottom:before, .march-shell bottom:after{flex: 1; content:''; height: 1px; background: var(--link); }
+
+.roster-shell{width: 500px;  background: var(--bg-1) var(--grad-4); border-radius:  var(--bdr-rds);padding: 35px; margin: 0px auto;  box-shadow: var(--temp-shadow) ; }
+
+.roster-shell outer{display: block; border: 0px dotted var(--bg-1); padding: 20px; border-radius: var(--bdr-rds);}
+.roster-shell flex{display: flex}
+.roster-shell span{flex-grow: 1}
+.roster-shell span line{display: block; height: 1px; background: var(--bg-1); margin: 29px 25px;  }
+.roster-shell div xy{font: 500 25px/62px var(--accent); background-image: var(--grad-1);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; }
+.roster-shell icon{    display: block;    width: 50px;    height: 50px;    padding: 6px;    background: var(--bg-3) var(--grad-5);  border-radius: var(--bdr-rds); box-shadow: var(--temp-shadow)}
+.roster-shell gif{    display: block;    width: 50px;    height: 50px;     background-size: cover; background-position: center;   border-radius: var(--bdr-rds);}
+
+
+.roster-shell info{  box-shadow: var(--temp-shadow) ; display: block;     padding: 15px;    background: var(--bg-3);  border-radius: var(--bdr-rds); font: 700 10px/20px var(--sans); text-transform: uppercase; letter-spacing: 1px;margin-top: 20px; text-align: justify}
+
+
+.roster-shell intro{  box-shadow: var(--temp-shadow);  display: block;     padding: 25px;    background: var(--bg-3);  border-radius: var(--bdr-rds); font: 400 14px/20px var(--sans); text-align: justify; text-transform: lowercase; letter-spacing: 0px;margin-top: 20px;}
+
+
+.roster-shell info i{padding: 0px 10px;}
+.roster-shell info xy{background-image: var(--grad-1); padding-right: 10px;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; }
+
+.roster-shell intro b, .roster-shell intro i{background-image: var(--grad-1); 
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; }
+.letters-shell{background: var(--bg-1); width: 530px; border-radius: var(--bdr-rds); margin: 0px auto; min-height: 300px; box-shadow: var(--body-shadow); overflow: hidden}
+.letters-shell top{display: flex; padding: 50px 25px; border-bottom:5px solid var(--bg-2);background: var(--grad-25)}
+.letters-shell top i{font-size: 20px;}
+.letters-shell top z{flex: 1; text-align: right; font: 500 20px/20px var(--accent)}
+.letters-shell xy, .letter-shell b, .letters-shell i, .letters-shell qu{background-image: var(--grad-1); color: transparent; background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -ms-background-clip: text;}
+.letters-shell inner{display: block; padding: 30px; background: var(--grad-08); border-bottom: 15px solid #000; border-image: var(--grad-2); border-image-slice: 15;}
+.letters-shell qu{font: 500 16px/22px var(--sans); display: block; text-transform: uppercase; letter-spacing: 1px;padding: 10px 0px}
+
+.letters-shell words{font: 400 14px/22px var(--sans); display: block; text-transform: lowercase; letter-spacing: 0px; text-align: justify; background: var(--bg-4); border-radius: var(--bdr-rds); box-shadow: var(--shadow1); padding-right: 5px;margin: 10px 0px; border: 20px solid var(--bg-4); max-height: 100px; overflow-y: auto;}
+.ambrosia-shell{width: 350px; border-radius: 3px; margin: 0px auto; background: var(--grad-25); min-height: 25px;padding: 20px; overflow: hidden; position: relative;}
+.ambrosia-shell:before{content: '';
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    left: -200px;
+    bottom: -200px;
+    border-radius: 66% 34% 61% 39% / 30% 76% 24% 70%  ;
+    border: 1px solid var(--bgcolor1);
+    background: var(--grad-08);
+    opacity: 1;}
+
+
+.ambrosia-shell:after{content: '';
+    display: block;
+    position: absolute;
+    width: 400px;
+    height: 400px;
+    right:-200px;
+    top: -200px;
+    border-radius: 66% 34% 61% 39% / 30% 76% 24% 70%  ;    background: var(--grad-08);
+
+    border: 1px solid var(--bgcolor1);
+    opacity: 1;}
+
+
+
+.ambrosia-shell inner{display: block; border: 0px solid var(--bg-1); padding: 25px; border-radius: 10px;position: relative; z-index: 3}
+
+.ambrosia-shell icon{background: var(--bg-4) var(--grad-4); padding: 20px;  display: block; }
+
+.ambrosia-shell icon2{width: 80px; height: 80px; display: block; margin: 20px auto; border-radius: 66% 34% 61% 39% / 30% 76% 24% 70%  ; overflow: hidden;  box-shadow: 0px 0px 10px 10px rgba(var(--color-2), 0.5)}
+.ambrosia-shell icon2 img{width: 80px; height: 80px; object-fit: cover; object-position: cover; border-radius:66% 34% 61% 39% / 30% 76% 24% 70%   }
+.ambrosia-shell icon1{display: block; border-radius: 3px; box-shadow: 0px 0px 10px 10px rgba(var(--color-2), 0.5); margin: 20px; overflow: hidden}
+.ambrosia-shell icon img{width: calc(100%);   display: block; filter: grayscale(100%) brightness(55%) contrast(75%); border-radius: 3px; margin: 0px; }
+.ambrosia-shell words{display: block; background: var(--bg-1); padding: 25px; border-radius: 0px 0px 3px 3px; font: 400 13px/22px var(--sans); text-align: justify;}
+.ambrosia-shell words b{ background: var(--grad-25); color:var(--link); font: 900 16px/1.6 var(--serif-font); font-style: italic; text-transform: lowercase; background-size: 100% 45%; background-position: bottom; background-repeat: repeat-x}
+.ambrosia-shell tagged{display: block; background: var(--bg-3); border-radius: 3px 3px 0px 0px; padding: 10px; font: 600 11px/21px var(--sans); text-transform: uppercase; letter-spacing: 1px; text-align: right; position: relative;}
+.ambrosia-shell tagged:after{content: ''; height: 1px; left: 10px; top: 19px; right: 10px; position: absolute; display: block; background: var(--grad-25); z-index: 1}
+
+.ambrosia-shell tagged a{background-clip: padding-box!important; background: var(--bg-3)!important; background-image: none!important; color: var(--lnk)!important; position: relative; z-index: 2; padding: 0px 10px;}
+.glowing-shell{margin: 0px auto; auto; width: 360px; min-height: 490px; background: var(--bgcolor1); position: relative; overflow: hidden; border-radius: 13px; box-shadow: var(--shadow1)}
+
+.glowing-shell:after{width: 900px; height:340px; border-radius: 0px; ; transform: rotate(-10deg); content: ''; background: var(--grad-2); position: absolute; top: -200px; left: -300px;; opacity: 1; border: 10px solid #000; border-image: var(--grad-08); border-image-slice:1 }
+.glowing-shell bar{display: flex; padding: 15px;}
+.glowing-shell bar l{font-size: 30px; line-height: 30px;}
+.glowing-shell bar r{flex: 1; text-align: right;font: 600 20px/30px var(--proximaNova); text-transform: uppercase; letter-spacing: 2px;}
+.glowing-shell bar r i{padding: 0px 0px 0px 15px;}
+
+.glowing-shell contact{display: block; padding: 20px 20px; text-align: left}
+.glowing-shell contact x{font: 400 15px/20px var(--proximaNova); text-transform: uppercase; letter-spacing: 2px; display: block;color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-image: var(--grad-1);}
+.glowing-shell contact tagged{font:700 14px/24px var(--proximaNova); text-transform: uppercase; letter-spacing: 1px; display: inline-block;}
+.glowing-shell contact tagged a{color: var(--text);}
+.glowing-shell contact tagged img{width: 16px; height: 16px;}
+
+.glowing-shell .glowing-messages{height: 300px; position: relative; margin: 30px; padding-right: 5px; top: 10px; overflow-y: auto; margin-bottom: 0px;}
+
+
+.glowing-messages p{background: var(--bgcolor1) var(--grad-2); display: inline-block; float: left; clear: left;margin: 5px; padding: 10px; font: 300 17px/20px var(--proximaNova); box-shadow: var(--shadow1); text-align: left; position: relative}
+.glowing-messages p img{max-width: 233px;}
+.post1 .glowing-messages p{float: left; clear: left; text-align: justify; border-radius: 5px; padding-left: 25px;}
+.post2 .glowing-messages p{float: right; clear: right; text-align: justify; border-radius: 5px; padding-right: 25px;}
+.post1 .glowing-messages p:before{top: 0px; bottom: 0px; left: 0px; width: 15px; content: ''; position: absolute; background: var(--grad-08)}
+.post2 .glowing-messages p:before{top: 0px; bottom: 0px; right: 0px; width: 15px; content: ''; position: absolute; background: var(--grad-08)}
+
+.glowing-shell bar2{background: var(--grad-08); display: flex; padding: 20px;margin-top: 40px;  border-top: 10px solid #000; border-image: var(--grad-08); border-image-slice:1 }
+.glowing-shell bar2 i{flex: 1; text-align: center; font-size: 20px; line-height: 70px;;}
+
+.glowing-shell .glowing-call{height: 200px; padding:30px; position: relative; margin: 30px; top: 20px; overflow-y: auto; margin-bottom: 0px; text-align: justify; font: 400 14px/20px var(--proximaNova); color: var(--text); background: var(--grad-08); border-radius: 13px}
+.glowing-shell .glowing-call words{height: 200px; margin: 0px; overflow-y: auto; display: block; padding-right: 5px;}
+
+.glowing-shell .glowing-call words b{color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-image: var(--grad-1); font: 700 18px/20px var(--proximaNova); letter-spacing: 1px; font-style: italic}
+
+
+
+.fizztrackerwrap, .fizzhistorywrap {position: relative; overflow: hidden; border-radius: 5px; margin: 30px; padding: 0px; background:var(--bgcolor1)}
+.fizztrackerwrap p, .fizzhistorywrap p {
+    position: relative;
+    font-size: 14px;; margin: 0px;
+background: var(--grad-2);    padding:25px;;
+    display: flex; font: 500 15px/1.8 var(--mono-script); text-transform: lowercase;
+    justify-content: space-between;
+}
+.fizztrackerwrap div{display: block;}
+.fizzthreadwrap {display: block; position: relative; text-decoration: none; display: flex; gap :15px;}
+.tracker-item {padding:10px; margin: 20px;}
+.tracker-item b a{font-size: 12px; text-transform: uppercase; letter-spacing: 1px; font-weight: 500; }
+.fizztrackerwrap .tracker-item , .fizzhistorywrap .tracker-item{position: relative; background: var(--bgcolor4); padding: 10px;display: block!important;  border-radius: 5px; box-shadow: var(--shadow1) }
+.tracker-item .status {float: left; font-size: 20px; position: absolute; top: 10px; right: 10px;}
+.tracker-item .caughtup i{color: green;}
+.tracker-item .myturn {color: firebrick}
+.tracker-item hr, .tracker-item br{display: none; content: '';}
+.tracker-item * {text-indent: 0;}
+.tracker-desc{display: block!important;}
+.fizzhistorywrap span[style="font-size: 90%; font-family: roboto, verdana, arial, sans"] {display: none!important; opacity: 0}
+.tracker-lastpost, .tracker-location, .tracker-threaddesc{font: 700 10px/20px var(--sans-font)!important; text-transform: uppercase; letter-spacing: 1px; display: block;}
+.fizztrackerwrap a, .fizztrackerwrap b, .tracker-location:before, .tracker-threaddesc:before{color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-image: var(--grad-1);}
+.tracker-location:before{content: 'location: ';}
+.tracker-threaddesc:before{content: 'desc: ';}
+
+
+.flower-shell{width: 560px;background: var(--bgcolor1) var(--grad-4); border-radius: 10px; margin: 0px auto; overflow: hidden; box-shadow: var(--shadow1)}
+
+.flower-title{background: var(--bgcolor1); padding: 20px; display: flex;     border-bottom:5px solid #000;
+    border-image: var(--grad-1);
+    border-image-slice: 20;}
+.flower-title i, .flower-title span{color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-image: var(--grad-1);}
+.flower-title span{flex: 1; text-align: right; font: 500 14px/30px var(--sans-font); text-transform: uppercase;}
+.flower-title i{font-size: 30px;}
+.flower-title span x{color: var(--text); padding: 0px 10px}
+
+.flower-post .flower-info{padding: 0px 0px 20px 0px; gap: 0px;}
+.flower-info{padding: 40px; gap: 15px; display: flex; align-items: center}
+.flower-info div{flex: 1;}
+.flower-info span{}
+.flower-info span icon{    width: 60px;
+    height: 60px;
+    display: block;
+    border-radius: 10px;
+    padding: 0px;
+    border: 0px solid rgba(var(--color-1), 1);
+    padding: 0px; box-shadow: var(--shadow1);
+    margin: 0px auto;}
+.flower-info span icon gif{    width: 60px;
+    height: 60px;
+    display: block; background-size: cover; background-position: center; filter: grayscale(100%) contrast(75%) brightness(75%);
+    border-radius: 10px;
+  }
+
+.flower-menu{padding: 45px; padding-bottom: 20px; display: flex; gap: 10px;}
+.flower-menu xy{flex: 1; text-align: center; font-size: 30px;}
+
+.flower-grid{display: grid; grid-template-columns: 1fr 1fr 1fr; padding: 40px; gap: 15px }
+.flower-grid img{border-radius: 5px; width: calc(100% - 0px); height: 150px; object-fit: cover;  box-shadow: var(--shadow1);}
+.flower-menu xy.fa-duotone:after, .flower-shell b, .flower-shell name, .flower-instagram comment i{
+color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-image: var(--grad-1);}
+
+.flower-shell username{display: block; font: 500 30px/30px var(--accent-font);text-align:right;
+color: var(--text)}
+.flower-info name{display: block; text-transform: uppercase; font: 700 14px/20px var(--sans-font);text-align: right; letter-spacing: 2px;}
+
+
+.flower-shell stats{display: flex; text-transform: uppercase; font: 500 11px/20px var(--sans-font);text-align: center; letter-spacing: 2px; 
+color: var(--text); padding: 20px}
+.flower-shell stats z{flex: 1}
+.flower-shell stats b{display: block;}
+
+.flower-info2{ margin: 40px 40px 10px 40px; background: var(--bgcolor1); padding: 0px; box-shadow: var(--shadow1); border-radius: 10px;}
+
+
+.flower-shell bio{display: block; text-transform: lowercase; font: 500 15px/18px var(--sans-font);text-align: center; letter-spacing: 0px;  padding: 0px 20px;
+color: var(--text)}
+
+
+
+.flower-instagram{padding: 40px; padding-bottom: 40px;}
+.flower-instagram pic img{border-radius: 5px; width: calc(100% - 0px); height: 480px; object-fit: cover;  box-shadow: var(--shadow1);}
+
+.flower-instagram comment{display: block; background: var(--bgcolor1); padding: 30px; text-align: justify; border-radius: 5px; box-shadow: var(--shadow1); margin-top: 15px; font: 400 17px/20px var(--sans-font)}
+
+.flower-instagram bar{display: flex; gap: 10px; padding-top: 20px;}
+.flower-instagram bar i{flex: 1; font-size: 20px; text-align: center}
+
+
+.arson-shell{width: 530px; background: var(--bgcolor1) var(--grad-4); border-radius: 5px; overflow: hidden; margin: 0px auto; box-shadow: var(--shadow1)}
+.arson-title{background: var(--bgcolor1); padding: 25px; border-bottom: 10px solid #000; border-image: var(--grad-1); border-image-slice: 10; display: flex}
+.arson-title l{display: inline-block; background: var(--grad-2); font: 500 13px/30px var(--mono-script); padding: 10px 20px; border-radius: 10px;}
+.arson-title r{text-align: right; flex: 1}
+.arson-title i{font-size: 50px;}
+.arson-title i:after{color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-image: var(--grad-1);}
+.arson-development{padding: 30px;  border-bottom: 10px solid #000; border-image: var(--grad-1); border-image-slice: 10; }
+.arson-development div{padding: 20px; background: var(--transparent); border-radius: 5px; box-shadow: var(--shadow3)}
+.arson-development .photo-one img{width: calc(100% - 20px); border: 5px solid var(--bgcolor1); border-radius: 5px; margin: 5px;}
+
+.arson-development .photo-two img{width: calc(50% - 22px); border: 5px solid var(--bgcolor1); border-radius: 5px; margin: 5px;}
+
+.arson-development .photo-three img{width: calc(33% - 22px); border: 5px solid var(--bgcolor1); border-radius: 5px; margin: 5px;}
+.arson-development .quote xy{font: 35px/40px var(--accent-font); text-transform: lowercase; ;display: block; text-align: justify}
+.arson-development .quote author{display: block; text-transform: lowercase; font: 20px/30px var(--mono-script);text-align: right; padding-top: 10px; }
+.arson-development .quote author:before{ content: "\2014"; padding-right: 10px;}
+
+
+
+.arson-development xy, .arson-development b, .arson-development h1{color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-image: var(--grad-1);}
+
+
+.arson-development .written words{display: block; font: 400 14px/20px var(--sans-font); text-align: justify}
+.arson-development .written h1{font: 40px/40px var(--accent-font); text-transform: lowercase; padding: 10px 0px; margin: 0px 0px; display: block; color: var(--link); background-clip: padding-box; display: inline-block; background-size: 100% 10%; background-position: bottom; background-repeat: repeat-x; background-image: var(--grad-5)}
+.arson-development .written words b{font: 17px/20px var(--mono-script); }
+
+.cyberpunk-shell{width: 350px; min-height: 490px; border-radius: 15px; background: var(--bgcolor1) var(--grad-2); margin: 0px auto; box-shadow: var(--shadow3); position: relative; overflow: hidden; border: 0px solid var(--bgcolor1) }
+
+.cyberpunk-shell bar{padding: 20px; display: flex; background: var(--transparent); }
+.cyberpunk-shell bar l{font-size: 34px; }
+.cyberpunk-shell bar r{text-align: right; flex: 1; font-size: 14px; line-height: 34px;}
+.cyberpunk-shell bar r i{margin-left: 10px; line-height: 34px;}
+.cyberpunk-shell contactname {display: block; padding: 20px; font-family: var(--sans-font); text-align: center}
+.cyberpunk-shell contactname xy{color: transparent;  
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; 
+    background-image: var(--grad-1); display: block; font: 400 24px/24px var(--accent-font); text-transform: lowercase; padding: 10px 0px; }
+.cyberpunk-shell contactname y{display: inline-block; text-transform: uppercase; padding: 8px; border-radius: 7px; background: var(--bgcolor1); font: 500 10px/13px var(--sans-font); letter-spacing: 1px;}
+
+.cyberpunk-shell contactname z{display: block; text-transform: lowercase; padding: 0px;font: 500 13px/13px var(--mono-script); letter-spacing: 0px;}
+.cyberpunk-shell contactname z a{color: var(--link)!important}
+
+
+.cyberpunk-shell bar2{background-color: var(--transparent); position: absolute; left: 0px; right: 0px; bottom: 0px; display: flex; line-height: 40px; padding: 20px 10px;}
+.cyberpunk-shell bar2 i{flex: 1; line-height: 40px; text-align: center; --fa-primary-color: var(--link); --fa-secondary-opacity: 1;}
+
+.cyberpunk-shell grid{display: grid; grid-template-columns: 90px auto; height: 300px; margin-bottom: 80px; padding-bottom: 20px;padding-left: 10px}
+.cyberpunk-shell grid flex{display: flex; flex-direction: column; align-items: stretch; gap: 10px}
+.cyberpunk-shell line{flex-grow: 1; width: 1px; background: var(--grad-1); margin: 0px auto; height: calc(100% - 180px); display: block;}
+.cyberpunk-shell flex icon{width: 80px; height: 80px; border-radius: 100%; background: var(--grad-2); display: block; margin: 0px 5px 15px 5px; }
+.cyberpunk-shell flex icon gif{width: 70px; height: 70px; margin: 5px; border-radius: 100%; display: block; background-size: cover; background-position: center;  filter: grayscale(100%) contrast(75%) brightness(75%); }
+.cyberpunk-shell flex v i.fa-duotone{height: 40px; line-height: 40px; display: block; text-align: center; font-size: 40px; opacity: 0.7}
+.cyberpunk-shell flex icon i.fa-duotone{height: 70px; line-height: 70px; display: block; text-align: center; font-size: 30px; padding: 5px; opacity: 0.7}
+
+.cyberpunk-shell messages{padding: 20px;}
+.cyberpunk-shell call{padding: 0px 20px;}
+
+.cyberpunk-messages{position: relative; z-index: 3; top: 0px; margin: 0px; height: 279px; bottom: 0px; overflow-y: auto}
+
+.cyberpunk-messages p{background: var(--bgcolor1); display: inline-block; float: left; clear: left;margin: 5px; padding: 10px;  border-image: var(--grad-5);  border-image-slice: 5; font: 400 14px/1.5 var(--sans-font); box-shadow: var(--shadow1); text-align: left}
+.cyberpunk-messages p img{max-width: 167px;}
+.post1 .cyberpunk-messages p{float: left; clear: left; text-align: left; border-left: 0px solid #000; border-radius: 5px;}
+.post2 .cyberpunk-messages p{float: right; clear: right; text-align: right; border-right: 0px solid #000; border-radius: 5px;}
+
+
+.cyberpunk-call{position: relative; z-index: 3; border-radius: 5px;  }
+.cyberpunk-call box{display: block; padding: 10px 0px; font: 600 10px/15px var(--sans-font); text-transform: uppercase; display: flex; letter-spacing: 1px; border-bottom: 1px solid var(--bgcolor1)}
+.cyberpunk-call box right{flex: 1; text-align: left}
+.cyberpunk-call box i{font-size: 15px;}
+.cyberpunk-call words{margin-top: 20px;font: 500 15px/1.5 var(--sans-font); display: block; height: 234px;overflow-y: auto; text-align: justify; padding-right: 5px;font-style: italic; }
+.cyberpunk-call words b{font-family: var(--mono-script); font-style: normal}
+.cyberpunk-shell xy,.cyberpunk-shell b{
+color: transparent;  
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; 
+    background-image: var(--grad-1);}
+
+
+
+.cyberpunk-shell ::-webkit-scrollbar {width: 3px; height: 8px; background-color: transparent; background-color: var(--bgcolor4)}
+.cyberpunk-shell ::-webkit-scrollbar-thumb {height: 6px; border:none!important; background-image: var(--grad-1); background-color: var(--bgcolor1); border-radius: 0px;}
+.cyberpunk-shell ::-webkit-scrollbar-button {width: 0; height: 0; display: none;}
+.cyberpunk-shell ::-webkit-scrollbar-corner {background-color: transparent;}
+.nonsense-shell{background: var(--bgcolor1) var(--grad-2); width: 350px; border-radius: 3px; margin: 10px auto;  overflow: hidden; position: relative;}
+
+
+.nonsense-inner{position: relative; z-index: 5; padding: 50px; }
+
+.nonsense-inner icon{position: relative; z-index: 5; padding: 10px; border-radius: 3px; display: block;background: var(--bgcolor1) var(--grad-4); margin-bottom: 20px; }
+.nonsense-inner icon img{width: 100%;    border-radius: 3px;  filter: grayscale(100%) contrast(65%) brightness(75%);;}
+
+
+.nonsense-inner icon2{position: relative; z-index: 5; padding: 10px; border-radius: 100%; display: block;background: var(--bgcolor1) var(--grad-4); margin: 0px auto 20px auto; width: 70px; height: 70px;overflow: hidden; }
+.nonsense-inner icon2 img{width:70px; height: 70px; border-radius: 100%;     filter: grayscale(100%) contrast(65%) brightness(75%); object-fit: cover;;}
+.nonsense-inner words{  
+    flex: 1;
+    text-transform: lowercase;
+    display: block;
+    font: 400 13px/20px var(--sans-font);
+    text-align: justify; letter-spacing: 1px;
+    padding-right: 0px;
+    color: var(--text);
+    border-radius: 5px;
+}
+
+
+.nonsense-shell b {
+    color: rgba(var(--color-2), 1);
+    background-image: var(--grad-2);
+    background-size: 100% 20%;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    font-family: var(--serif-font);
+    font-size: 18px; border-radius: 5px;
+    font-weight: 700;
+    font-style: italic; letter-spacing: 0px;
+}
+
+.nonsense-tagged{background: var(--bgcolor1); border-top: 5px solid #000; border-image: var(--grad-5); border-image-slice: 5; padding: 25px; font: 400 14px/25px var(--mono-script);text-align: right}
+.nonsense-tagged i{font-size: 25px;float: left}
+.nonsense-tagged a{color: var(--link)!important; text-transform: lowercase; letter-spacing: 0px;}
+
+.darling-shell{background: var(--bgcolor1) var(--grad-25); width: 400px; border-radius: 10px; margin: 10px auto;  overflow: hidden; position: relative;}
+
+.darling-shell .w1{
+height: 200px; width: 400px;
+background: var(--bgcolor1); opacity: 0.3;
+display: block; z-index: 2;
+clip-path: path('M0,32L26.7,48C53.3,64,107,96,160,96C213.3,96,267,64,320,80C373.3,96,427,160,480,165.3C533.3,171,587,117,640,90.7C693.3,64,747,64,800,106.7C853.3,149,907,235,960,256C1013.3,277,1067,235,1120,186.7C1173.3,139,1227,85,1280,64C1333.3,43,1387,53,1413,58.7L1440,64L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z')}
+
+.darling-shell .w2{
+height: 250px; width: 400px;
+background: var(--bgcolor1); opacity: 0.2;
+display: block;  z-index: 1;
+clip-path: path('M0,160L16,176C32,192,64,224,96,218.7C128,213,160,171,192,144C224,117,256,107,288,128C320,149,352,203,384,229.3C416,256,448,256,480,213.3C512,171,544,85,576,69.3C608,53,640,107,672,128C704,149,736,139,768,154.7C800,171,832,213,864,229.3C896,245,928,235,960,229.3C992,224,1024,224,1056,208C1088,192,1120,160,1152,138.7C1184,117,1216,107,1248,117.3C1280,128,1312,160,1344,192C1376,224,1408,256,1424,272L1440,288L1440,0L1424,0C1408,0,1376,0,1344,0C1312,0,1280,0,1248,0C1216,0,1184,0,1152,0C1120,0,1088,0,1056,0C1024,0,992,0,960,0C928,0,896,0,864,0C832,0,800,0,768,0C736,0,704,0,672,0C640,0,608,0,576,0C544,0,512,0,480,0C448,0,416,0,384,0C352,0,320,0,288,0C256,0,224,0,192,0C160,0,128,0,96,0C64,0,32,0,16,0L0,0'); transform: rotateY(180deg);}
+
+#wpos, #wpos2{position: absolute; top: 0px; left: 0px; right: 0px;}
+
+.darling-inner{position: relative; z-index: 5; padding: 50px; }
+.darling-inner flex{display: flex; flex-wrap: no-wrap; gap: 10px; align-items: center; posiiton: relative; z-index:10; height: 100px; padding-top: 40px; padding-bottom: 35px;}
+.darling-inner line{height: 1px; background: var(--grad-1); display: block; flex: 1}
+.darling-inner icon{font-size: 50px;--fa-primary-color: rgba(var(--color-1), 1);    text-shadow: 2px 2px 0px var(--bgcolor1); height: 50px;line-height: 100px; height: 100px;}
+
+.darling-inner icon i{opacity: 0.7; line-height: 100px;}
+.darling-inner icon2{display: inline-block; width: 70px; height: 70px; background-color: var(--bgcolor1); background-size: cover; background-position: center; border-radius: 100%; border: 5px solid var(--bgcolor1); float: right;     box-shadow: 0px 0px 10px 10px rgba(var(--color-2), 0.2);}
+
+.darling-inner words{    border: 25px solid var(--bgcolor1);
+    background: var(--bgcolor1);
+    flex: 1;
+    text-transform: lowercase;
+    display: block;
+    font: 400 14px/20px var(--sans-font);
+    text-align: justify;
+    padding-right: 10px;
+    color: var(--text);
+    border-radius: 5px;
+}
+
+
+.darling-shell b {
+    color: var(--link);
+    background-image: var(--grad-2);
+    background-size: 100% 50%;
+    background-repeat: repeat-x;
+    background-position: bottom;
+    font-family: var(--mono-font);
+    font-size: 18px;
+    font-weight: 500;
+    font-style: normal;
+}
+
+.darling-tagged{background: var(--bgcolor1); border-image: var(--grad-5); border-image-slice:1; border-top:10px solid #000; padding: 25px; font: 700 10px/25px var(--sans-font);text-align: right}
+.darling-tagged i{font-size: 25px;float: left}
+.darling-tagged a{color: var(--link)!important; text-transform: uppercase; letter-spacing: 1px;}
+.daywalker-shell{width: 300px; min-height: 450px; border-radius: 12px; background: var(--bgcolor1) var(--grad-2); margin: 0px auto; position: relative; overflow: hidden; padding-bottom: 80px;}
+.d-wave{width: 300px; height: 280px; position: absolute; z-index: 1; top: 0px; right: 0px; left: 0px; padding: 0; margin: 0; overflow: hidden; border-top: 20px solid var(--bgcolor1)}
+.d-wave:before{content: ""; z-index:2; clip-path: path('M0,128L18.5,149.3C36.9,171,74,213,111,208C147.7,203,185,149,222,133.3C258.5,117,295,139,332,160C369.2,181,406,203,443,208C480,213,517,203,554,213.3C590.8,224,628,256,665,250.7C701.5,245,738,203,775,192C812.3,181,849,203,886,192C923.1,181,960,139,997,117.3C1033.8,96,1071,96,1108,85.3C1144.6,75,1182,53,1218,85.3C1255.4,117,1292,203,1329,213.3C1366.2,224,1403,160,1422,128L1440,96L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z'); height:120%; width: 100%; background: var(--bgcolor1); display: block; transform: rotateX(180deg); position: absolute; left: 0px; top: -20px; right: 0px;}
+
+.d-wave:after{content: ''; z-index: 1; clip-path: path('M0,64L18.5,74.7C36.9,85,74,107,111,112C147.7,117,185,107,222,90.7C258.5,75,295,53,332,80C369.2,107,406,181,443,208C480,235,517,213,554,192C590.8,171,628,149,665,160C701.5,171,738,213,775,213.3C812.3,213,849,171,886,138.7C923.1,107,960,85,997,101.3C1033.8,117,1071,171,1108,181.3C1144.6,192,1182,160,1218,133.3C1255.4,107,1292,85,1329,90.7C1366.2,96,1403,128,1422,144L1440,160L1440,320L1421.5,320C1403.1,320,1366,320,1329,320C1292.3,320,1255,320,1218,320C1181.5,320,1145,320,1108,320C1070.8,320,1034,320,997,320C960,320,923,320,886,320C849.2,320,812,320,775,320C738.5,320,702,320,665,320C627.7,320,591,320,554,320C516.9,320,480,320,443,320C406.2,320,369,320,332,320C295.4,320,258,320,222,320C184.6,320,148,320,111,320C73.8,320,37,320,18,320L0,320Z'); height:100%; width: 200%; background: var(--grad-08); display: block!important; transform: rotateX(180deg) rotateY(0deg); position: absolute; right: 0px; left: 0px; top: 20px;}
+.daywalker-inner{position: relative; z-index: 3; font-family: var(--sans-font)}
+.daywalker-inner bar{display: flex; padding: 10px; font-size: 10px; font-weight: 700}
+.daywalker-inner bar right{flex:1; text-align: right; }
+.daywalker-inner bar right i{padding: 0px 5px;}
+
+.daywalker-inner contactname{display: block; padding: 10px; font-size: 10px; font-weight: 400}
+
+.daywalker-inner z{display: inline-block; padding: 10px;  background: var(--grad-2); border-radius: 4px;}
+.daywalker-inner tagged{display: block; flex: 1; padding: 10px; border-radius: 4px; text-align: right}
+.daywalker-inner tagged a{color: var(--link)!important}
+.daywalker-inner flex{display: flex; text-transform: uppercase; letter-spacing: 1px; font-size: 10px; font-weight: 700; line-height: 11px;}
+.daywalker-inner name{display: block; padding: 10px; font-size: 20px; font-weight: 700; text-align: left;text-transform: uppercase; letter-spacing: 1px;border-radius: 4px;}
+.daywalker-inner name img{width: 20px; height: 20px;}
+.daywalker-inner icon-shell {box-shadow: 0px 0px 10px 10px rgba(var(--color-2), 0.2); width: 60px; height: 60px; position: absolute; top: 130px; right: 20px; border-radius: 100%;display: inline-block;}
+.daywalker-inner icon-shell icon{display: inline-block; width: 50px; height: 50px; border: 5px solid var(--bgcolor4); background-color: var(--bgcolor4); background-size: cover; background-position: center; border-radius: 100%; box-shadow: 0px 0px 2px 1px rgba(0,0,0,0.1)}
+.daywalker-inner icon-shell icon i{display: block; background: var(--grad-2); border-radius: 100%; line-height: 50px; width: 50px; height: 50px; text-align: center; font-size: 24px;}
+
+.daywalker-messages{position: relative; z-index: 3; top: 70px; margin: 20px; height: 199px; bottom: 60px; overflow-y: auto}
+
+.daywalker-messages p{background: var(--bgcolor1); display: inline-block; float: left; clear: left;margin: 5px; padding: 10px;  border-image: var(--grad-5);  border-image-slice: 5; font: 400 14px/1.5 var(--sans-font); text-align: left}
+.daywalker-messages p img{max-width: 217px;}
+.post1 .daywalker-messages p{float: left; clear: left; text-align: left; border-left: 5px solid #000; border-radius: 0px 5px 5px 0px;}
+.post2 .daywalker-messages p{float: right; clear: right; text-align: left; border-right: 5px solid #000; border-radius: 5px 0px 0px 5px;}
+
+.daywalker-shell bar2{background-color: var(--text); position: absolute; left: 0px; right: 0px; bottom: 0px; display: flex; line-height: 40px; padding: 20px 10px; border-image: var(--grad-1);  border-image-slice: 5; border-top: 5px solid #000;}
+.daywalker-shell bar2 i{flex: 1; line-height: 40px; text-align: center; --fa-primary-color: var(--bgcolor1); --fa-secondary-opacity: 1;}
+.daywalker-call{position: relative; z-index: 3; top: 70px; margin: 20px; bottom: 60px; overflow-y: hidden; border-radius: 5px; box-shadow: var(--shadow1); background: var(--bgcolor1)}
+.daywalker-call box{display: block; background: var(--grad-2); padding: 10px; font: 600 10px/15px var(--sans-font); text-transform: uppercase; display: flex; letter-spacing: 1px;}
+.daywalker-call box right{flex: 1; text-align: center}
+.daywalker-call box i{font-size: 15px;}
+.daywalker-call words{border: 15px solid var(--bgcolor1); font: 500 15px/1.5 var(--sans-font); display: block; height: 134px;overflow-y: auto; text-align: justify; padding-right: 5px;font-style: italic; }
+.daywalker-call words b{font-family: var(--mono-script); font-style: normal}
+.daywalker-shell xy,.daywalker-shell b{
+color: transparent;  
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; 
+    background-image: var(--grad-1);}
+
+
+.attention-shell{width: 370px; background: var(--bgcolor1); border-radius: 4px; overflow: hidden; margin: 0px auto; min-height: 300px; box-shadow: var(--shadow2); position: relative; display: flex;}
+.attention-shell:before{content: ''; top: 0px; left: 0px; bottom: 0px; background: var(--grad-25); width: 60px; position: absolute;border-right:5px solid #000;border-image:var(--grad-1);border-image-slice:5;z-index: 1; }
+#attention-side{position: relative; width: 45px; z-index:2; padding: 10px; font-size: 20px;   color: var(--link2)}
+#attention-side i{text-align: center; display: block; padding: 10px;}
+#attention-side tag{position: absolute; bottom: 0px; left: 0px; writing-mode: vertical-lr; line-height: 10px; top: 0px; text-align: right; display: block; padding: 25px}
+#attention-side tag a{font-family: var(--mono-script); font-size: 12px; color: var(--link)!important}
+#attention-side tag a:before{content: 'from: ';}
+
+#attention{padding: 50px 20px 20px 20px; flex: 1;}
+#attention top{display: block; font-family: var(--sans-font); text-align: right}
+#attention top xy{display: block; font-weight: bold; font-size: 11px; letter-spacing: 2px; text-transform: uppercase}
+#attention top name{margin: 5px; background: var(--bgcolor4); display: inline-block; font-size: 22px; font-family: var(--serif-font); padding: 10px; font-weight: bold; font-style: italic; border-radius: 4px; box-shadow: var(--shadow1); color: var(--txt);}
+#attention-messages {height: 250px; overflow-y: auto; margin: 20px 0px; padding-right: 5px; }
+#attention-messages p{background: var(--bgcolor1) var(--grad-25); display: inline-block; clear: both; padding: 15px; border-radius: 5px; margin: 5px; font: 400 15px/17px var(--sans-font); color: var(--link); text-align: justify; box-shadow: var(--shadow1);}
+#attention-messages p img{max-width: 270px;}
+.post1 #attention-messages p{float: right;}
+.post2 #attention-messages p{float: left; }
+#attention-call{background: var(--bgcolor1) var(--grad-25); margin: 40px 0px 0px 0px; padding: 15px; border-radius: 4px; box-shadow: var(--shadow2) }
+#attention-call scroll{display: block; height: 250px; overflow-y: auto; font-family: var(--sans-font); font-style: italic; text-align: justify; line-height: 20px; font-size: 14px; }
+#attention-call scroll b{font-family: var(--serif-font); font-size: 18px}
+.attention-send{display: flex; height: 50px; margin-bottom: 10px}
+.attention-send div{flex: 1; height: 20px; line-height: 20px; border-radius: 4px 0px 0px 4px; background: var(--bgcolor4); margin: px 0px; padding: 5px 8px; font-size: 10px; text-transform: uppercase; font-family: var(--sans-font); box-shadow: var(--shadow1); border-right: 0px;margin: 17px -5px 0px 0px; font-weight: 500; letter-spacing: 2px;}
+.attention-send b{font-weight: 500}
+.attention-send send{border-radius: 4px; background: var(--bgcolor1) var(--grad-2); width: 40px; height: 40px;display: inline-block; padding: 10px; line-height: 40px; text-align: center; color: var(--link2);box-shadow: var(--shadow1); }
+.attention-send send i{line-height: 40px;}
+
+.attention-shell xy,.attention-shell b{
+color: transparent;  
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; 
+    background-image: var(--grad-1);}
+
+
+.nice-shell{background: var(--bgcolor1) var(--grad-4); border-radius: 5px; box-shadow: var(--shadow1); overflow: hidden; font-family: var(--sans-font); text-align: right; width: 370px; margin: 0px auto; line-height: 170%; position: relative}
+.nice-shell:before{content: ''; display: block; position: absolute; width: 500px; height: 500px; left: -50%; bottom: -50%; border-radius: 100%  ; border: 2px solid var(--bgcolor1); background: var(--grad-2); opacity: 0.9}
+.nice-shell:after{content: ''; display: block; position: absolute; width: 500px; height: 500px; top: -25%; right: -50%; border-radius: 100% ; border: 2px solid var(--bgcolor1); background: var(--grad-2); opacity: 0.9;}
+
+.nice-shell flex{display: block; text-align: right; padding: 45px; gap: 15px; position: relative; z-index: 2}
+.nice-shell icon{border: 1px solid var(--bgcolor1); padding: 20px; border-radius: 100%;  display: inline-block; margin: 0px 0px 90px 0px;   box-shadow: 0px 0px 20px rgba(var(--color-1), 0.5); overflow: hidden; width: 84px; height: 84px; background: var(--trans4)}
+.nice-shell icon img{border-radius: 100%; object-fit: cover; padding: 0px; margin: 0px; width: 80px; height: 80px; border: 2px solid var(--bgcolor1);}
+.nice-shell div{border: 25px solid var(--bgcolor1); background: var(--bgcolor1); flex: 1;
+    text-transform: lowercase;
+    display: block;
+    font: 400 14px/20px var(--sans-font);
+    text-align: justify;
+    padding-right: 10px;
+    color: var(--text);  border-radius: 5px;   box-shadow: var(--shadow1);
+}
+.nice-shell tagged i{float: right; font-size: 40px;}
+.nice-shell tagged{    background: var(--bgcolor1); border-radius: 5px 5px 0px 0px;position: relative; z-index: 2;
+    padding: 20px 20px;
+    font: 500 14px/40px var(--sans-font);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 5px solid #000;
+    border-image: var(--grad-1);
+    border-image-slice: 1; text-align: left;
+    position: relative;
+    display: block;}
+
+
+.nice-shell b{color: var(--link);
+    background-image: var(--grad-2); background-size: 100% 50%; background-repeat: repeat-x; background-position: bottom; font-family: var(--serif-font); font-size: 17px; font-weight: bold; font-style: italic}
+.bff-shell{background: var(--bgcolor1) var(--grad-4); border-radius: 5px; box-shadow: var(--shadow1); overflow: hidden; font-family: var(--sans-font); width: 370px; margin: 0px auto; line-height: 170%; position: relative}
+.bff-shell:before{content: ''; display: block; position: absolute; width: 500px; height: 500px; left: -50%; bottom: -50%; border-radius: 100%; border: 2px solid var(--bgcolor1)}
+.bff-shell:after{content: ''; display: block; position: absolute; width: 500px; height: 500px; top: -25%; right: -50%; border-radius: 100%; border: 2px solid var(--bgcolor1)}
+
+.bff-shell flex{display: block; padding: 45px; gap: 15px; position: relative; z-index: 2}
+.bff-shell pic{border: 10px solid var(--bgcolor1); background: var(--bgcolor1); border-radius: 5px;  display: block; margin-bottom: 10px;   box-shadow: var(--shadow1); max-height: 150px;}
+.bff-shell pic img{border-radius: 5px; object-fit: cover; padding: 0px; margin: 0px; width: 260px;}
+.bff-shell div{border: 25px solid var(--bgcolor1); background: var(--bgcolor1); flex: 1;
+    text-transform: lowercase;
+    display: block;
+    font: 400 14px/20px var(--sans-font);
+    text-align: justify;
+    padding-right: 10px;
+    color: var(--text);  border-radius: 5px;   box-shadow: var(--shadow1);
+}
+.bff-shell tagged i{float: right; font-size: 40px;}
+.bff-shell tagged{    background: var(--bgcolor1); border-radius: 5px 5px 0px 0px;position: relative; z-index: 2;
+    padding: 20px 20px;
+    font: 500 14px/40px var(--sans-font);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 5px solid #000;
+    border-image: var(--grad-1);
+    border-image-slice: 1;
+    position: relative;
+    display: block;}
+
+
+.bff-shell b{color: var(--link);
+    background-image: var(--grad-2); background-size: 100% 50%; background-repeat: repeat-x; background-position: bottom; font-family: var(--mono-script); font-size: 17px; font-weight: normal}
+.shine-shell{background: var(--bgcolor1) var(--grad-4); border-radius: 5px; box-shadow: var(--shadow1); overflow: hidden; font-family: var(--sans-font); width: 510px; margin: 0px auto; line-height: 170%;}
+.shine-shell flex{display: flex; padding: 25px; gap: 15px;}
+.shine-shell pic{border: 10px solid var(--bgcolor1); background: var(--bgcolor1); border-radius: 5px; flex: 1 ;  box-shadow: var(--shadow1); height: 350px;}
+.shine-shell pic img{border-radius: 5px; width: 183px; height: 350px; object-fit: cover;}
+.shine-shell div{border: 25px solid var(--bgcolor1); background: var(--bgcolor1); flex: 1;
+    text-transform: lowercase;
+    display: block;
+    font: 400 14px/20px var(--sans-font);
+    height: 320px;
+    overflow-y: auto;
+    text-align: justify;
+    padding-right: 10px;
+    color: var(--text);  border-radius: 5px;   box-shadow: var(--shadow1);
+}
+.shine-shell tagged i{float: right; font-size: 40px;}
+.shine-shell tagged{    background: var(--bgcolor1); border-radius: 5px 5px 0px 0px;
+    padding: 20px 20px;
+    font: 500 14px/40px var(--sans-font);
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-bottom: 5px solid #000;
+    border-image: var(--grad-1);
+    border-image-slice: 1;
+    position: relative;
+    display: block;}
+
+
+.shine-shell b{color: transparent!important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; 
+    background-image: var(--grad-1); font-family: var(--mono-script); font-size: 17px;}
+.sour-shell{background: var(--bgcolor1) var(--grad-4); border-radius: 5px; box-shadow: var(--shadow1); overflow: hidden; font-family: var(--sans-font); width: 410px; margin: 0px auto; line-height: 170%}
+
+.sour-shell xy{color: transparent!important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; 
+    background-image: var(--grad-1);}
+.sour-shell.alt{width: 360px;}
+#sour-msg{padding: 30px;}
+#sour-msg name{display: block; border: 10px solid var(--bgcolor4);padding: 20px 0px; min-height: 26px; border-radius: 5px 5px 0px 0px; box-shadow: var(--shadow1); background: var(--bgcolor4); margin-bottom: 0px; line-height: 1.5; text-align: center; font-size: 9px; letter-spacing: 1px; letter-spacing: 1px; font-weight: bold; flex: 1; text-transform: uppercase;}
+#sour-msg name xy{display: block; font-size: 17px;}
+
+#sour-msg div{display: block; border: 10px solid var(--bgcolor);padding: 20px 20px; min-height: 26px; border-radius: 0px 0px 5px 5px; box-shadow: var(--shadow1); background: var(--bgcolor1); margin-bottom: 0px; line-height: 1.5; text-align: center; font-size: 15px; letter-spacing: 0px; letter-spacing: 1px; font-weight: 400; flex: 1; text-transform: normal;}
+#sour-msg div p{background: var(--grad-2); display: inline-block; clear: left; margin: 10px;padding: 10px; border-radius: 10px; text-align: left; line-height: 1.2}
+.sour-bar{background-color: var(--bgcolor1); border-bottom: 0px solid var(--border); padding: 20px; position: relative; display: flex; font-size: 25px}
+.sour-bar m{flex:1; text-align: center; font: 700 18px/25px var(--sans-font); letter-spacing: 1px;}
+
+#sour-tinder{padding: 30px;}
+
+#sour-tinder grid{display: grid; grid-template-columns: auto 56px; gap: 10px;}
+#sour-tinder pic{display: block; border: 10px solid var(--bgcolor1); height: 300px; border-radius: 5px; box-shadow: var(--shadow1); background: var(--bgcolor1)}
+#sour-tinder pic img{border-radius: 5px; width: 264px; height: 300px; object-fit: cover}
+#sour-tinder r i{display: block; border: 10px solid var(--bgcolor1); height: 36px; border-radius: 5px; box-shadow: var(--shadow1); background: var(--bgcolor1); margin-bottom: 10px; line-height: 36px; text-align: center; font-size: 25px;}
+
+#sour-tinder interests{display: flex; flex-wrap: wrap; gap: 10px;}
+#sour-tinder interests span{display: block; border: 10px solid var(--bgcolor1); min-height: 26px; border-radius: 5px; box-shadow: var(--shadow1); background: var(--bgcolor1); margin-bottom: 10px; line-height: 26px; text-align: center; font-size: 9px; letter-spacing: 1px; letter-spacing: 1px; font-weight: bold; flex: 1; text-transform: uppercase; color: rgba(var(--color-1), 1)}
+#sour-tinder bio{display: block; border: 10px solid var(--bgcolor1); min-height: 26px; border-radius: 5px; box-shadow: var(--shadow1); background: var(--bgcolor1); margin-bottom: 10px; line-height: 26px; text-align: justify; font-size: 15px;}
+#sour-tinder bio xy{font-size: 35px; font-weight: bold;display: block; font-family: var(--accent-font); line-height: 1.7}
+#sour-tinder flex{display: flex; flex-wrap: nowrap; gap: 10px;}
+#sour-tinder flex div{display: block; border: 10px solid var(--bgcolor1); min-height: 26px; border-radius: 5px; box-shadow: var(--shadow1); background: var(--bgcolor1); margin-bottom: 10px; line-height: 26px; text-align: center; font-size: 9px; letter-spacing: 1px; letter-spacing: 1px; font-weight: bold; flex: 1; text-transform: uppercase;}
+#sour-match{padding: 30px;}
+#sour-match match{display: block; border: 10px solid var(--bgcolor1); min-height: 26px; border-radius: 5px; box-shadow: var(--shadow1); background: var(--bgcolor1); margin-bottom: 10px; line-height: 26px; text-align: center; font-size: 15px; padding: 20px;}
+#sour-match match i{display: block; font-size: 30px;}
+#sour-match match z{font: 700 9px/20px var(--sans-font); letter-spacing: 1px; display: block; text-transform: uppercase}
+#sour-match match a xy{font: 30px/30px var(--accent-font); padding: 15px 0px 5px 0px; display: block; text-transform: lowercase}
+
+#sour-match y{display: block; border: 10px solid var(--bgcolor1); border-radius: 5px; box-shadow: var(--shadow1); background: var(--bgcolor1); margin-bottom: 0px; line-height: 26px; text-align: center; font-size: 10px; padding: 0px; text-transform: uppercase; letter-spacing: 1px; font-weight: bold; }
+
+.raya-dev1-shell{width: 550px; background:var(--bgcolor1) var(--grad-2); border-radius: 5px; overflow: hidden; margin: 0px auto; box-shadow: var(--shadow1); }
+
+.raya-dev1-shell .fa-duotone{    
+    --fa-primary-color: rgba(var(--color-1),1);
+    --fa-secondary-color: rgba(var(--color-2),1);}
+
+
+.raya-dev1-title {border-bottom: 10px solid #000; border-image: var(--grad-1); border-image-slice: 10;
+    background: var(--bgcolor1);
+    padding: 70px 40px;
+    background-position: center;
+    text-align: right;
+    line-height: 100%;
+    border-radius: 4px 4px 0px 0px;
+    position: relative;
+  font: 44px/100% var(--accent-font);
+text-transform: lowercase; font-style: normal; letter-spacing: 2px;
+     text-shadow: 3px 1px 0px var(--link);
+
+}
+.raya-dev1-title i{float: left; }
+.raya-dev1-shell xy, .raya-dev1-shell h1, .raya-dev1-shell b{
+color: transparent;  
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; 
+    background-image: var(--grad-1);}
+
+
+.raya-dev1-content{border-bottom: 3px solid #000; border-image: var(--grad-1); border-image-slice: 10;}
+.raya-dev1-subtitle{background: var(--bgcolor1); text-align: center; font: 500 14px/22px var(--mono-script); padding: 15px 0px; color: var(--link)}
+
+.raya-dev1-inner{padding: 30px; background: var(--grad-25)}
+
+.raya-dev1-inner photo{background: var(--trans4); padding: 20px;box-shadow: var(--shadow1); display: block; border-radius: 4px}
+.raya-dev1-inner photo.one img{width: calc(100% - 30px); border: 10px solid var(--bgcolor1); box-shadow: var(--shadow); border-radius: 5px; margin: 5px;}
+
+.raya-dev1-inner photo.two img{width: calc(50% - 30px); border: 10px solid var(--bgcolor1); box-shadow: var(--shadow1); border-radius: 5px; margin: 5px}
+
+.raya-dev1-inner photo.three img{width: calc(33% - 30px); border: 10px solid var(--bgcolor1); box-shadow: var(--shadow1); border-radius:5px; margin: 5px}
+
+.raya-dev1-inner quote{background: var(--trans4); padding: 40px;box-shadow: var(--shadow1); display: block; border-radius: 5px; font: 600 30px/35px var(--serif-font); font-style: italic; text-transform: lowercase; text-align: justify; }
+
+.raya-dev1-inner quote author{color: var(--link); display: block; font: 400 20px/25px var(--sans-font); font-style: normal; text-align: right; text-transform: uppercase; padding-top: 20px; color: var(--link)}
+.raya-dev1-inner author:before{  content: "\2014"; padding-right: 10px;}
+
+
+.raya-dev1-inner words{background: var(--trans4); padding: 40px;box-shadow: var(--shadow1); display: block; border-radius: 5px; font: 400 16px/20px var(--sans-font); font-style: normal; text-transform: lowercase; text-align: justify; color: var(--link)}
+.raya-dev1-inner words b{font-family: var(--mono-script); font-size: 16px;}
+.raya-dev1-inner words h1{font: 800 25px/35px var(--serif-font); font-style: normal; text-transform: uppercase; padding: 10px 0px; margin: 0px 0px; display: block; }
+
+.raya-dev1-inner vid{background: var(--trans4); padding: 20px;box-shadow: var(--shadow1); display: block; border-radius: 5px}
+
+.vibin-shell{background: var(--bgcolor1) var(--grad-4); border: 1px solid var(--border); height: auto; width: 400px;margin: 0px auto}
+
+#vibin-title{background: var(--bgcolor1); padding: 10px; border-bottom: 1px solid var(--border); text-transform: uppercase; font-size: 22px; line-height: 30px;}
+#vibin-title i{float: right; font-size: 30px; color: var(--fontcolor)}
+
+#vibin-subtitle {font-weight: 300;padding: 30px 30px 0px 30px;font-size: 50px; color: var(--text); line-height: 100%; position: relative}
+#vibin-subtitle i{color:var(--whiteff); position:absolute; top: 0px; right: 0px;padding: 10px; font-size: 40px;}
+#vibin-subtitle x{display: block; border: 20px solid rgba(158, 131, 199, 1);  border-image:var(--grad-1); border-image-slice:20; border-top: 0px; border-bottom: 0px; border-right: 0px;padding-left: 20px;}
+#vibin-messages{max-height: 280px; padding-right: 5px; overflow: auto; margin: 30px;}
+#vibin-messages p{
+display: inline-block; 
+clear: both; 
+float: right; 
+position: relative; 
+max-width: 220px; 
+min-height: 10px; 
+text-align: justify; 
+word-wrap: break-word;
+margin: 5px;
+    color: var(--text);
+    background: var(--bgcolor1);
+    padding: 15px;
+    border-radius: 10px;
+    font-family: var(--sans-font);
+    font-size: 14px;
+    line-height: 125%;
+    border: 1px solid var(--border);}
+
+
+.vibin-shell xy, .vibin-shell icon3 i{color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-image: var(--grad-1);}
+
+#vibin-contact icon{border: 0px solid #fff; width: 50px; height: 50px; padding: 5px; position: relative; display: inline-block; margin: 15px; position: absolute; top: 0px; left: 0px;; padding: 10px}
+#vibin-contact icon2{position: relative; display: block; width: 40px; height: 40px; border: 1px solid var(--bgcolor1); outline: 0px solid var(--bgcolor4); top: 0px; margin: 5px auto; background-size: cover; background-position: center}
+
+#vibin-contact icon3{position: relative; display: block; width: 40px; height: 40px; border: 1px solid var(--bgcolor1); border-image: var(--grad-1); border-image-slice: 1; outline: 0px solid var(--bgcolor4); top: 0px; margin: 10px; background-size: cover; background-position: center; line-height: 40px; text-align: center; font-size: 20px; background-image: var(--grad-25)}
+
+#vibin-contact bar{display: block; height: 7px; top: 0px; left: 0px; right: 0px; position: absolute;}
+#vibin-contact bar:before{border: 1px solid rgba(158, 131, 199, 1);  border-image:var(--grad-1); border-image-slice:2; border-width: 2px 0px 0px 2px; position: absolute; top: 0px; left: 0px; content: ''; width: 10px; height: 10px; }
+#vibin-contact bar:after{border: 2px solid rgba(158, 131, 199, 1); border-image:var(--grad-1); border-image-slice:2; border-width: 2px 2px 0px 0px; position: absolute; top: 0px; right: 0px; content: ''; width: 10px; height: 10px; }
+
+#vibin-contact bar2{display: block; height: 7px; bottom: 0px; left: 0px; right: 0px; position: absolute;}
+#vibin-contact bar2:before{border: 1px solid rgba(158, 131, 199, 1); border-image:var(--grad-1); border-image-slice:2; border-width: 0px 0px 2px 2px; position: absolute; bottom: 0px; left: 0px; content: ''; width: 10px; height: 10px; }
+#vibin-contact bar2:after{border: 1px solid rgba(158, 131, 199, 1); border-image:var(--grad-1); border-image-slice:2; border-width: 0px 2px 2px 0px; position: absolute; bottom: 0px; right: 0px; content: ''; width: 10px; height: 10px; }
+
+#vibin-contact{height: 100px; position: relative; border-top: 1px solid var(--border); background: var(--bgcolor1); text-align: right; line-height: 100px; padding-right: 20px; font-size: 22px; text-transform: uppercase}
+
+
+
+
+.panic-shell{background: var(--bgcolor1) var(--grad-4); border-radius: 5px; box-shadow: var(--shadow1); overflow: hidden; font-family: var(--sans-font); width: 500px; min-height: 500px; margin: 0px auto; line-height: 170%}
+
+.panic-header{background-color: var(--bgcolor1); border-bottom: 0px solid var(--border); padding: 10px; position: relative; display: flex;}
+.panic-header v{display:inline-block; line-height: 50px; height: 50px; position: absolute; left: 110px; top: 0px;}
+.panic-header v i{line-height: 50px;}
+.panic-header right{display:inline-block; line-height: 50px; height: 50px; position: absolute; right: 10px; top: 0px;}
+.panic-header v i, .panic-header right i{margin: 0px 5px; font-size: 15px; line-height:50px}
+
+.panic-header left z, .panic-header left x, .panic-header left m{display:inline-block; margin: 7px 5px; width: 15px; height: 15px; background: var(--grad-1); border-radius: 100%}
+.panic-header left x{background: var(--grad-4)}
+.panic-header left m{background: var(--grad-25)}
+.panic-header bar{ flex: 1; background: var(--bgcolor4); border: 1px solid var(--border); border-radius: 5px; position: absolute; left: 200px; right: 100px;display: block; padding: 5px; line-height: 17px; font-size: 12px; text-align: right; padding-right: 10px;;}
+.panic-header bar i{margin: 0px 0px; float: left; line-height: 17px; font-size: 17px;}
+
+.panic-grid{display: grid; grid-template-columns: 80px auto;}
+.panic-grid instabar{background: var(--bgcolor2);border-right: 0px solid var(--border) ;position: relative}
+.panic-grid instabar .fa-duotone{display: block; text-align: center; padding: 15px; font-size: 20px;}
+.panic-grid bottom{position: absolute; bottom: 0px;}
+.panic-grid instabar icon{width: 62px; height: 62px; border-radius: 77% 23% 56% 44% / 30% 80% 20% 70%  ; background: var(--grad-1); display: block;margin: 10px 6px; background-size: cover; background-position: center; padding: 1px;}
+.panic-grid instabar gif{width: 45px; height: 45px; border-radius: 5px; background-color: #000; display: block;margin: 8px; background-size: cover; background-position: center; border: 2px solid var(--bgcolor1)}
+
+.panic-grid info{padding: 0px;}
+.panic-grid pad{display: block;padding: 40px 40px 20px 40px;}
+
+.panic-grid info name{display: block; text-align: right; font-size: 35px; font-weight: 800; text-transform: lowercase;   line-height: 1;  filter: drop-shadow(2px 1px 0px var(--bgcolor1)); font-family: var(--accent-font)}
+.panic-grid info fullname{display: block; text-align: right; font-size: 12px; letter-spacing: 2px; font-weight: 500; text-transform: uppercase; padding-bottom: 10px;}
+
+.panic-grid info count{display: grid; grid-template-columns: 102px auto 102px; column-gap: 10px; margin: 10px 0px;}
+.panic-grid info count span{ border: 0px solid var(--border); padding: 10px; border-radius: 5px; background: var(--bgcolor1); box-shadow: var(--shadow1)}
+.panic-grid info count span b{display: block; text-align: center; font-size: 9px; letter-spacing: 2px; line-height: 1.3;}
+.panic-grid info count span x{display: block; text-transform: uppercase; font-size: 9px; text-align: center; font-weight: 500; letter-spacing: 2px; line-height: 1.4}
+
+.panic-grid info pic{display: block; overflow: hidden; border-radius: 5px; box-shadow: var(--shadow1); height:338px; overflow: hidden;}
+
+
+.panic-grid info comment{display: block;  border-radius: 5px; box-shadow: var(--shadow1); padding: 10px; margin: 10px 0px 0px 0px; background: var(--bgcolor1);font-size: 15px; text-align: justify;}
+
+
+
+.panic-grid info pic img{object-fit: cover; width: 338px; height: 338px;}
+.panic-grid info stories{display: grid; grid-template-columns:24% 24% 24% 24%; column-gap: 10px; margin: 10px 0px;}
+
+.panic-grid info icon{width: 50px; height: 50px; border-radius: 100%; background: var(--grad-1);display: block;margin: 10px auto; background-size: cover; background-position: center; padding: 1px;}
+.panic-grid info icon gif{width: 48px; height: 48px; border: 1px solid var(--bgcolor1); display: block; border-radius: 100%;  background-size: cover; background-position: center; }
+.panic-grid info tag{display: block; font-size: 10px; text-transform: uppercase; font-weight: bold; color: var(--text); text-align: center}
+.panic-grid info tag img{width: 20px;}
+
+.panic-grid info grid{ background: var(--bgcolor1) ; padding: 40px; display: grid; grid-template-columns:31% 31% 31%; column-gap: 10px;row-gap:10px; margin: 20px 0px 0px 0px;}
+.panic-grid info grid span{overflow: hidden; border-radius: 5px; box-shadow: var(--shadow1); height: 104px; }
+.panic-grid info grid span img{width: 104px; height: 104px; object-fit: cover;}
+
+
+
+.panic-shell xy, .panic-shell b, .panic-header bar i, .panic-grid comment i{color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-image: var(--grad-1);}
+
+
+.utopia-shell{width: 320px; border-radius: 15px; margin: 10px auto; min-height: 400px; background: var(--bgcolor1) var(--grad-2); border: 5px solid var(--bgcolor1); box-shadow: 0px 0px 15px rgba(0,0,0,0.1); position: relative}
+.utopia-shell send{display: flex; margin: 10px; background: var(--bgcolor3); border-radius: 15px; padding: 10px;}
+
+
+.utopia-shell flex{display: flex;}
+.utopia-shell flex l{width: 70px;}
+.utopia-shell flex l i{display: block; text-align: center; padding: 25px 20px; font-size: 25px;}
+.utopia-shell flex messages{max-height: 300px; padding: 5px; overflow-y: auto;margin: 25px 20px 20px 0px;}
+.utopia-shell messages p{background: var(--grad-25); display: inline-block;  padding: 10px; border-radius: 5px; font: 400 15px/17px var(--sans-font); text-align: justify; margin: 5px;}
+.utopia-shell messages p img{max-width: 190px}
+.utopia-shell send x{flex: 1; font: 700 9px/16px var(--sans-font); text-transform: uppercase; letter-spacing: 1px;}
+.utopia-shell xy, .utopia-shell b{color: transparent;  
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; 
+  background-image: var(--grad-1);}
+.utopia-shell top{display: flex; padding: 25px; line-height: 20px;}
+.utopia-shell top name{flex: 1; text-align: center;}
+.utopia-shell top name xy{color: transparent;  
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; 
+    background-image: var(--grad-1); display: inline-block; font: 600 13px/18px var(--sans-font); text-transform: uppercase; padding-bottom: 1px; border-bottom: 1px solid var(--bgcolor1)}
+.utopia-shell top i{font-size: 20px;}
+
+.paradigm-shell{width: 400px; padding: 70px;; border-radius: 15px; background: var(--bgcolor1) var(--grad-5); margin: 10px auto; box-shadow: 0px 0px 20px rgba(var(--color-1), 0.5)}
+.paradigm-shell inner{display: block; padding: 0px; border-radius: 10px; overflow: hidden; box-shadow: 0px 0px 20px rgba(0,0,0,0.1)}
+.paradigm-shell inner tagged{display: block; font-family: var(--sans-font); background: var(--bgcolor4); padding: 20px; font-size: 11px; text-transform: uppercase; letter-spacing: 1px; font-weight: bold; line-height: 20px}
+.paradigm-shell inner tagged i{font-size: 20px; float: right}
+.paradigm-shell inner words{display: block; font: 400 15px/1.6 var(--sans-font); background: var(--bgcolor1); padding: 30px; text-align: justify}
+.paradigm-shell inner words b{    color: var(--link)!important;
+    background-image: var(--grad-5);
+    background-size: 100% 50%;
+    background-clip: padding-box;
+    background-position: bottom;
+    background-repeat: repeat-x;
+    font-size: 20px;
+    font-family: var(--serif-font);
+    font-style: normal;
+    font-weight: 800; font-style: italic}
+
+
+#default{width: 550px;  margin: 0px auto; border: 0px solid var(--border); border-radius: 7px; overflow: hidden; background: var(--bg-1) var(--grain); box-shadow: var(--temp-shadow);}
+#default-inner{margin: 0px; border-top: 0px solid var(--border); background: var(--grad-25); padding: 40px; text-align: justify;}
+#default-title{background-color: var(--bg3); background-image: var(--pny);  background-position: top right;    background-repeat: no-repeat; border-bottom: 4px solid #000; border-image: var(--grad-1); border-image-slice: 4; font-family: var(--mono); text-transform: lowercase; padding: 20px; font-size: 14px; font-weight: 500; line-height: 16px; position: relative; letter-spacing: 0px; }
+#default-title b z{font-size: 14px; font-weight: 500; color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; 
+    background-image: var(--grad-1)}
+#default-title x{float: right;}
+#default-title x i{margin: 2px 4px;    background-image: var(--grad-1); width: 10px; height: 10px; border-radius: 100%; display: inline-block;}
+#default-title x i:nth-child(1){opacity: 0.5}
+#default-title x i:nth-child(2){opacity: 0.7}
+#default-words{ padding: 30px; background: var(--bg-1); font-style: normal; color: var(--txt); line-height: 1.6; text-align: justify; font-family: var(--sans); box-shadow: var(--temp-shadow); border-radius: 7px; font-size: 14px;}
+
+#fearless-shell{margin: 10px auto; max-width: 420px;; border-radius: 3px; background: var(--bgcolor1); box-shadow: 0 3px 4px rgba(0,0,0,.1);overflow: hidden}
+#fearless-title{background: var(--bgcolor1) var(--grad-25); padding: 50px; font-family: var(--sans); border-bottom: 5px solid var(--bgcolor4); font-size: 50px; text-align: left}
+#fearless-title icon{background: var(--bgcolor1) var(--grad-5); width: 82px; height: 82px; border-radius: 3px; display: inline-block; margin: 12px 12px; padding: 10px; border: 1px solid var(--body)}
+
+#fearless-title gif{width:80px; height: 80px; border: 1px solid var(--bgcolor1); background-size: cover; background-position: center; display: block; border-radius: 3px}
+
+#fearless-title pic{background: var(--bgcolor1) var(--grad-5); border-radius: 3px; display: block; margin: 12px 12px; padding: 10px; box-shadow: var(--shadow1); }
+
+#fearless-title gif2{height: 150px; border: 1px solid var(--border); background-size: cover; background-position: center; display: block; border-radius: 3px}
+
+
+#fearless-shell x{background: var(--bgcolor3); color: var(--text); padding: 0px; display: block; text-transform: uppercase; font-size: 20px; font-weight:400;border: 10px solid var(--bgcolor3); letter-spacing: 1px; border-radius: 5px; text-align: right}
+#fearless-shell c{float: left; padding: 5px; display: inline-block; font-size: 40px;}
+#fearless-shell a.user-tagged {
+    background-clip: border-box!important;
+    background: var(--bgcolor1) var(--grad-4);
+    color: var(--text);
+    text-decoration: none;
+    padding: 15px; border-radius: 5px;
+    border: 0px solid rgba(var(--color-1), 1); 
+    font-family: var(--mono-script);
+    text-transform: lowercase;
+    font-size: 13px;
+    line-height: 16px;
+    height: 16px;
+    letter-spacing: 1px;
+    font-weight: 500;
+    display: inline-block;
+    margin-right: 0px;
+}
+#fearless-shell #fearless-shell a.user-tagged:before {
+    font-family: 'Font Awesome 6 Pro';
+    content: '\f007';
+    font-weight: 400;
+    display: inline-block;
+    margin-right: 15px;
+}
+#fearless-inner{padding: 60px; text-align: justify; font-size: 14px; line-height: 150%; background: var(--bgcolor1)}
+#fearless-inner b{font-family: var(--sans-font); font-weight: 400; font-size: 14px; font-style: italic; border-bottom: 3px solid var(--bgcolor1); background-clip: padding-box!important; background: var(--grad-25)!important; color: var(--text)!important; margin: 15px 5px;line-height:250%; padding: 5px; border-radius: 15px; }
+#fearless-shell xy, #fearless-shell b, #fearless-shell i{color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; 
+    background-image: var(--grad-1)}
+
+
+.gone-shell{background: var(--bgcolor1) var(--grad-25); width: 450px;border-radius: 3px; overflow: hidden; margin: 10px auto;  position: relative; line-height: 160%; text-align: center; position: relative;margin: 1px auto; font-family: var(--sans-font); border: 1px solid var(--border); overflow: hidden}
+.gone-shell h1{background: var(--bg-3); font-size: 12px; text-transform: uppercase; font-weight: 400; text-align: right; line-height: 20px; height: 20px; padding: 15px; margin: 0px; display: block; border-bottom: 1px solid var(--border)}
+.gone-shell words{padding: 90px; font-size: 14px; text-align: justify; display: block; margin-bottom: 10px; border-bottom: 1px solid var(--border); background: var(--bgcolor1); font-family: var(--sans-font);}
+.gone-shell h1 i{float: left;font-size: 20px;}
+.gone-shell b{font-size: 17px; font-weight:400; font-style: italic; font-family: var(--sans-font); border-bottom: 1px dashed var(--bgcolor4); line-height: 27px; display: inline }
+.gone-shell tagged{display: block; padding: 20px 0px;}
+.gone-shell tagged a.user-tagged{background-clip: border-box!important; background: var(--bgcolor1) var(--grad-25); color: var(--text); text-decoration: none; padding: 10px; border:1px solid var(--border); font-family: var(--sans-font); text-transform: uppercase; font-size: 11px; line-height: 20px; height: 20px; letter-spacing: 1px; font-weight: 500;display: inline-block; margin-right: 5px; border-radius: 3px;}
+.gone-shell tagged a.user-tagged:before{font-family: 'Font Awesome 6 Pro'; content: '\f007'; font-weight: 400; display: inline-block; margin-right: 15px;}
+.gone-shell xy, .gone-shell b{ color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; 
+    background-image: var(--grad-1)}
+
+
+.illusion-shell{width: 410px; background: var(--bgcolor1) var(--grad-2); border-radius: 5px;margin: 0px auto; overflow: hidden }
+.illusion-shell b, .illusion-shell xy{  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;  background-image: var(--grad-1);
+}
+.illusion-shell tagged{background: var(--bgcolor1);  padding: 10px 20px; font: 600 14px/70px var(--serif-font); letter-spacing: 1px; text-transform: uppercase; border-bottom: 1px solid #000; border-image: var(--grad-1); border-image-slice: 1; position: relative; display: block; }
+
+.illusion-shell tagged i{  --fa-primary-color: rgba(var(--color-1), 1);
+  --fa-secondary-color: rgba(var(--color-2), 1);line-height: 40px }
+.illusion-shell tagged x{background: var(--bgcolor4); border-radius: 5px; width: 40px; height: 40px; line-height: 40px; text-align: center; display: inline-block; padding: 10px; position: absolute; bottom: 15px; right: 15px; }
+
+
+.illusion-shell tagged a{text-decoration: none; line-height: 60px; display: inline-block;}
+.illusion-shell inner{display: block; padding: 40px;     font: 400 14px/20px var(--sans-font); text-align: justify}
+.illusion-shell inner b{font-family: var(--serif-font); font-weight: 600; font-size: 17px;}
+
+
+
+
+.calm-shell{width: 410px; background: var(--bgcolor1) var(--grad-2); border-radius: 5px;margin: 0px auto; display: flex; overflow: hidden }
+.calm-shell b, .calm-shell xy{  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;  background-image: var(--grad-1);
+}
+
+.calm-shell tagged{background: var(--bgcolor1); width: 70px; padding: 40px 10px; font: 600 14px/70px var(--serif-font); letter-spacing: 1px; text-transform: uppercase; border-right: 1px solid #000; border-image: var(--grad-1); border-image-slice: 1; position: relative}
+
+.calm-shell tagged i{  --fa-primary-color: rgba(var(--color-1), 1);
+  --fa-secondary-color: rgba(var(--color-2), 1);line-height: 40px }
+.calm-shell tagged x{background: var(--bgcolor4); border-radius: 5px; width: 40px; height: 40px; line-height: 40px; text-align: center; display: inline-block; padding: 10px; position: absolute; bottom: 15px; left: 15px; }
+
+
+.calm-shell tagged a{text-decoration: none; line-height: 70px; display: inline-block; writing-mode: vertical-lr;}
+.calm-shell inner{flex: 1; padding: 40px;     font: 400 14px/20px var(--sans-font); text-align: justify}
+.calm-shell inner b{font-family: var(--serif-font); font-weight: 600; font-size: 18px;}
+
+
+.cruel-shell{width: 580px; border-radius: 4px; background: var(--bgcolor1) var(--stats) no-repeat; background-attachment:fixed; background-size: cover; overflow: hidden; box-shadow: var(--shadow1); margin: 0px auto}
+.cruel-shell xy,.cruel-shell b{
+color: transparent;  
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; 
+    background-image: var(--grad-1);}
+.cruel-shell top{padding: 20px; background: var(--bgcolor1); display: block; font: 400 20px/100% var(--sans-font); border-bottom: 5px solid #000; border-image: var(--grad-1); border-image-slice: 5;}
+.cruel-shell top xy{ color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text; border-radius: 4px;display: inline-block; padding: 10px;letter-spacing: 1px; text-transform: uppercase}
+
+.cruel-shell inner{display: block; border-bottom: 15px solid #000; border-image: var(--grad-1); border-image-slice: 5; padding: 35px;}
+
+.cruel-shell pic{background: var(--bgcolor1); padding: 15px; border-radius: 4px;display: block; box-shadow: var(--shadow1); margin: 10px}
+.cruel-shell pic img{border-radius: 4px; width: 100%; margin: 0px; padding: 0px; filter: grayscale(100%) contrast(65%) brightness(70%);}
+
+.cruel-shell words{background: var(--bgcolor1); padding: 25px; border-radius: 4px;display: block; box-shadow: var(--shadow1); margin: 10px; font: 400 14px/20px var(--sans-font); text-align: justify; color: var(--text)}
+.cruel-shell words b{font-family: var(--mono-script); font-size: 16px; font-weight: 400}
+
+
+
+.cruel-shell character{background: var(--bgcolor1) var(--grad-5); padding: px; border-radius: 4px;display: block; box-shadow: var(--shadow1); margin: 10px; overflow: hidden}
+.cruel-shell character m{display: grid; padding: 20px; background: var(--pattern); gap: 20px; grid-template-columns: 110px auto }
+.cruel-shell character m icon{}
+
+.cruel-shell character icons {
+  width: 70px;
+  height: 70px;
+  padding: 4px;
+  border-radius: 5px; margin: 0px;
+}
+.cruel-shell character div2{height: 70px; overflow-y: auto; display: block;  padding-right: 5px;}
+.cruel-shell character scroll{ display: block; border-radius: 4px; background: var(--bgcolor1) var(--grad-08); flex: 1; padding: 20px; margin: 5px; font: 500 14px/20px var(--sans-font); text-transform: lowercase; text-align: justify; color: var(--link)}
+
+.cruel-shell character div {
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+  border-radius: 4px;
+  background: var(--bgcolor1) var(--grad-5);
+}
+
+.cruel-shell character div icon {
+  display: block;
+  width: 90px;
+  height: 90px;
+  background-size: cover; 
+  background-position: center;
+  border-radius: 4px;
+  filter: grayscale(90%) contrast(75%) brightness(60%);}
+
+.cruel-shell character t{display: block; background: var(--bgcolor2);;padding: 15px; font: 400 20px/100% var(--sans-font); border-bottom: 5px solid #000; border-image: var(--grad-1); border-image-slice: 5;}
+.cruel-shell t xy{background-clip: padding-box!important;border-radius: 4px; color: var(--link2); display: inline-block; padding: 10px; box-shadow: var(--shadow1); letter-spacing: 1px; text-transform: uppercase}
+
+
+.cruel-shell character bt{display: block; background: var(--bgcolor4);;padding: 15px 15px 15px 0px; font: 400 12px/100% var(--mono-script); letter-spacing: 0px; border-top: 5px solid #000; border-image: var(--grad-1); border-image-slice: 5; color: var(--link); text-transform: lowercase; text-align: right}
+
+.cruel-shell list{background: var(--bgcolor1); padding: 10px; border-radius: 4px;display: block; box-shadow: var(--shadow1); margin: 10px; overflow: hidden}
+
+.cruel-shell list a{background: var(--bgcolor1) var(--grad-3); color: var(--link); padding: 20px; border-radius: 4px;display: block; box-shadow: var(--shadow1); margin: 10px; overflow: hidden; font: 400 12px/100% var(--mono-script); text-align: left}
+.cruel-shell list xy{display: block;font: 500 19px/30px var(--sans-font); text-transform: uppercase;}
+
+.cruel-shell inner2{display: grid;
+  grid-template-columns: 230px auto; border-bottom: 15px solid #000; border-image: var(--grad-1); border-image-slice: 5; padding: 35px;}
+
+.cruel-shell inner2 pic{height: 250px; overflow: hidden;}
+.cruel-shell inner2 pic img{height: 250px; width: 180px; object-fit: cover; border-radius: 4px;}
+.cruel-shell inner2 scroll{ height: 230px; overflow-y: auto; display: block; padding-right: 5px; font: 400 14px/20px var(--sans-font); text-transform: lowercase; text-align: justify; color: var(--link)}
+
+
+.cruel-shell inner2 bt{background: var(--pattern); padding: 20px 10px; border-radius: 4px;display: block; box-shadow: var(--shadow1); margin: 10px; overflow: hidden;   grid-area: 2 / col1-start / last-line / 1; font: 13px/22px var(--mono-script); text-align: center; color: var(--link)}
+
+
+
+.euphoria-shell{width: 310px; background: var(--bgcolor1) var(--grad-2); margin: 10px auto; border-radius: 15px; border-left: 10px solid var(--bgcolor4); border-image: var(--grad-25); border-image-slice:10; position: relative; overflow: hidden}
+.euphoria-wave1{clip-path: path('M0,160L26.7,144C53.3,128,107,96,160,85.3C213.3,75,267,85,320,117.3C373.3,149,427,203,480,229.3C533.3,256,587,256,640,240C693.3,224,747,192,800,186.7C853.3,181,907,203,960,213.3C1013.3,224,1067,224,1120,213.3C1173.3,203,1227,181,1280,165.3C1333.3,149,1387,139,1413,133.3L1440,128L1440,0L1413.3,0C1386.7,0,1333,0,1280,0C1226.7,0,1173,0,1120,0C1066.7,0,1013,0,960,0C906.7,0,853,0,800,0C746.7,0,693,0,640,0C586.7,0,533,0,480,0C426.7,0,373,0,320,0C266.7,0,213,0,160,0C106.7,0,53,0,27,0L0,0Z'); background: var(--bgcolor1); opacity:0.27; z-index: 2 }
+.euphoria-wave2{clip-path: path('M0,320L40,282.7C80,245,160,171,240,128C320,85,400,75,480,85.3C560,96,640,128,720,165.3C800,203,880,245,960,245.3C1040,245,1120,203,1200,181.3C1280,160,1360,160,1400,160L1440,160L1440,0L1400,0C1360,0,1280,0,1200,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z'); background: var(--bgcolor1); opacity: 0.25; transform: scaleX(-1); z-index: 1; }
+#euphoria-wave-pos{position: absolute; top: 0px; left: 0px; width: 310px; height: 320px; left: 0px; right: 0px;}
+
+
+.euphoria-shell xy, .euphoria-shell i, .euphoria-shell b{background: var(--grad-1); color: transparent; background-clip: text; -webkit-background-clip: text; -moz-background-clip: text; -ms-background-clip: text;}
+#euphoria{position: relative; z-index: 5;}
+
+.euphoria-top{padding: 15px; font-size: 22px; text-align: right;  }
+.euphoria-top left{float: left}
+.euphoria-top xy{padding: 0px 5px;}
+
+
+#euphoria contact{margin: 10px; border-radius:0px; display: block; position: relative; overflow: hidden; font: 400 10px/14px var(--mono-script); letter-spacing: 1px; text-transform: uppercase; padding: 15px 5px; border-bottom: 1px solid var(--bgcolor1); text-align: center }
+#euphoria contact xy{font: 600 29px/150% var(--accent-font); text-transform: lowercase; display: block;}
+#euphoria contact a{text-decoration: none}
+.euphoria-messages{padding:10px; font-size: 11px; margin: 10px; border-radius: 5px; max-height: 230px; overflow-y: auto; line-height: 100%; }
+.euphoria-call{padding:10px; font-size: 11px; background: var(--trans4); display: block; margin: 15px; padding: 10px; border-radius: 10px; line-height: 100%}
+.euphoria-call call{display: block;max-height: 100px; overflow-y: auto; font: 400 13px/130% var(--sans-font); text-align: justify; margin: 15px; text-transform: lowercase; font-style: italic; padding-right: 5px;}
+.euphoria-call call b{font-family: var(--mono-script)}
+.euphoria-call controls{display: flex; font-size: 20px; text-align: center; line-height: 100%;padding: 10px;}
+  .euphoria-call controls i{flex: 1;  text-align: center; }
+.euphoria-messages p{background: var(--grad-25); display: inline-block;  padding: 10px; border-radius: 5px; font: 400 13px/17px var(--sans-font); text-align: justify; margin: 5px;}
+.euphoria-messages p img{max-width: 270px;}
+.post1 .euphoria-messages p{float: right; clear: right;}
+.post2 .euphoria-messages p{float: left; clear: left;}
+.euphoria-icon{position: relative; border-radius: 59% 41% 73% 27% / 30% 63% 37% 70% ; width: 100px; height: 100px; background: var(--bgcolor1) var(--grad-25); margin: 0px auto;position: relative; }
+.euphoria-icon icon{border-radius: 59% 41% 73% 27% / 30% 63% 37% 70% ; width: 100px; height: 100px; background: var(--bgcolor1); position: absolute; top: 10px; left: 10px; line-height: 100px; font-size: 40px; text-align: center; }
+.euphoria-icon i{ -webkit-animation: jello 3s linear infinite; 
+  animation: jello 3s linear infinite; line-height: 100px;
+  display: block;}
+.euphoria-icon gif{border-radius: 59% 41% 73% 27% / 30% 63% 37% 70% ; width: 90px; height: 90px; background-size: cover; background-position: center; position: absolute; top: 5px; left: 5px;;}
+#euphoria send{background: var(--bgcolor1); display: block; margin: 15px; padding: 10px; border-radius: 5px; text-align: left; font: 500 14px/20px var(--mono-script); position: relative}
+#euphoria send i{color: var(--link);font-size: 20px; float: right; opacity: 0.5}
+
+
+
+.minus-shell{background: var(--bgcolor1) var(--grad-4); width: 330px;border-radius: 10px; margin: 10px auto; overflow: hidden; position: relative; line-height: 160%; text-align: center; box-shadow: var(--shadow1)}
+.minus-shell *{box-sizing: border-box}
+#minus{background: rgba(255,255,255,0.1);padding-bottom: 78px }
+#minus bar{display: block; padding: 20px; text-align: right}
+#minus bar i{float: left; font-size: 40px; color: var(--bgcolor1);}
+#minus bar one{    background: var(--bgcolor1);
+    box-shadow: var(--shadow1);
+    display: inline-block;
+    border-radius: 5px;
+    padding: 15px 10px;
+    position: relative;
+    line-height: 15px;
+    text-align: right; color: var(--link);
+    font: 500 15px/15px var(--mono)}
+#minus wave{display: block; position: absolute; bottom: -10px; left: 0px; right: 0px;}
+#minus .shadow{  -webkit-filter: drop-shadow(0px 5px -5px var(--trans3));filter: drop-shadow( 0px 5px -5px var(--trans3));}
+#minus icon{display: block; margin: 15px; text-align: center}
+#minus icon outer{width: 110px; height: 110px; border-radius: 100%; display: inline-block; background: var(bgcolor1) var(--grad-5);border: 5px solid var(--bgcolor1);   }
+#minus icon i{line-height: 100px; font-size: 50px; color: var(--bgcolor1); display: block; text-align: center}
+#minus icon gif{width: 100px; height: 100px; border-radius: 100%; display: inline-block; border: 0px solid var(--bgcolor1)}
+#minus name{display: block}
+#minus name xz{display: block; font-family: var(--sans-font); font-size: 25px; font-weight: 900; text-transform: uppercase}
+#minus name z{display: block; font-family: var(--mono-script); color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-image: var(--grad-1); }
+#minus messages{display: block; z-index: 90; min-height: 200px; max-height: 320px; padding-right: 5px; overflow: auto; margin: 30px 30px 30px;}
+#minus messages p{    background: var(--bgcolor1);
+    border-left: 5px solid var(--border);
+    overflow: hidden; 
+    border-image: var(--grad-25);
+    border-image-slice: 1;
+    border-radius: 0px 5px 5px 0px;
+    padding: 10px; font-weight: 500;
+    font-size: 16px; z-index: 1;
+    text-align: justify;
+    line-height: 120%;}
+#minus messages p img{max-width: 240px}
+
+#minus bottom{position: absolute; bottom: -10px; left: 20px; right: 20px; line-height: 80px; display: block; height: 88px;z-index: 99; text-align: left; font-size: 35px;}
+#minus bottom right{float: right}
+#minus bottom i{ color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text;
+    background-image: var(--grad-1);line-height: 78px;}
+#minus btn{display: block; line-height: 100%; font-size: 50px; color: var(bgcolor1); margin: auto auto -20px}
+
+
+
+#dice-shell{background: var(--bgcolor1) var(--grad-25); box-shadow: var(--shadow1);max-width: 530px; margin: 0px auto; padding: 60px;  border-radius: 5px; }
+#dice-shell *{box-sizing: border-box}
+
+#dice-shell inner{background: var(--trans4); box-shadow: var(--shadow1); display: block; padding: 20px;  border-radius: 5px;}
+#dice-shell xy, #dice-shell b, #dice-shell i{color: transparent!important;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; 
+    background-image: var(--grad-1);}
+
+photo1{display: grid; grid-template-columns: 100%;}
+photo1 img{width: calc(100% - 20px);; background: var(--bgcolor1); border: 15px solid var(--bgcolor1); box-shadow: var(--shadow1); border-radius: 5px; margin: 10px;}
+
+photo2{display: grid; grid-template-columns: 50% 50%; column-gap: 10px; row-gap: 10px;}
+photo2 img{width: calc(100% - 10px); background: var(--bgcolor1); border: 15px solid var(--bgcolor1); box-shadow: var(--shadow1); border-radius: 5px;}
+
+photo3{display: grid; grid-template-columns: 33% 33% 33%; column-gap: 10px; row-gap: 10px;}
+photo3 img{width: calc(100% - 10px); background: var(--bgcolor1); border: 15px solid var(--bgcolor1); box-shadow: var(--shadow1); border-radius: 5px;}
+
+#dice-shell quote {
+    font-family: var(--serif-font);
+    font-style: normal;
+    font-size: 37px;
+    text-align: right;
+    padding: 20px;
+    border-radius: 5px;
+    margin: 5px 40px;
+    display: block;
+}
+#dice-shell quote xy{display: block; text-align: justify; text-transform: lowercase; line-height: 120%;}
+#dice-shell author{display: block; font-family: var(--sans-font); text-transform: uppercase; text-align: right;font-size: 20px; font-weight: 300; letter-spacing: 2px;}
+
+
+#dice-shell blockquote{display: block; margin: 0px; text-align: justify; font-size: 14px; line-height: 120%; padding: 20px; background: var(--bgcolor1); border: 15px solid var(--bgcolor1); box-shadow: var(--shadow1); border-radius: 5px;}
+
+
+
+#dice-shell quote:before {
+    display: inline-block;
+    font-family: "Font Awesome 6 Pro";
+    content: '\e234';
+    color: var(--text);
+    font-size: 90px;
+    width: 47px;
+    height: 47px;
+    line-height: 47px;
+    text-align: center;
+    font-style: normal;
+    font-weight: 100;
+   
+    border-radius: 5px;
+    padding: 10px;
+    margin: 20px 0px 20px 0px;}
+.venom-shell{width: 420px; background: var(--bgcolor1); border-radius: 10px;margin: 0px auto;box-shadow: var(--shadow1) }
+
+#venom-top{height: 150px; position: relative; overflow: hidden; border-radius: 10px 10px 0px 0px;}
+
+.venom-wave1{clip-path: path('M0 300c60.947 7.414 121.894 14.828 174-6 52.106-20.828 95.37-69.898 149-56 53.63 13.898 117.628 90.763 179 83 61.372-7.763 120.12-100.153 173-99 52.88 1.153 99.89 95.849 163 127 63.11 31.151 142.317-1.243 172-20 29.683-18.757 9.842-23.879 30-29l-40 300H0Z'); right: 0px; left: 0px; height: 460px; top:-100px; position: absolute; background: var(--bgcolor1) var(--grad-4); opacity:1; z-index: 2; opacity: 0.4; transform: scaleY(-1);  }
+
+.venom-wave2{clip-path: path('M0 300c47.496 21.936 94.992 43.872 145 12 50.008-31.872 102.527-117.553 170-97 67.473 20.553 149.9 147.339 203 157 53.1 9.661 76.872-97.802 128-142 51.128-44.198 129.611-25.13 203 11 73.389 36.13 141.682 89.323 166 102 24.318 12.677 4.659-15.161 25-43l-40 300H0Z'); right: 0px; left: 0px; height: 460px; top: -120px; position: absolute; background: var(--bgcolor1) var(--grad-4); opacity:1; z-index: 2; opacity: 0.7; transform: scaleX(-1) scaleY(-1); }
+.venom-shell words{font: 400 14px/150% var(--sans-font); padding: 20px 40px 40px 40px; display: block; text-align: justify; }
+.venom-shell words b{background: var(--bgcolor1) var(--grad-2); border-radius: 10px;padding: 5px; line-height: 200%; font-weight: 500; font: 16px/200% var(--mono-script) }
+.venom-shell tagged{font: 400 14px/30px var(--sans-font); margin: 10px 40px 0px 40px; display: block; text-align: right; position: relative }
+.venom-shell tagged:before{content: ''; display: block; left: 0px; right: 0px; bottom: 15px; height: 1px; background: var(--bgcolor1) var(--grad-4); position: absolute;z-index: 1}
+.venom-shell tagged i{  font-size: 20px; float: left; --fa-primary-color: rgba(var(--color-1), 1);  --fa-secondary-color: rgba(var(--color-2), 1); background: var(--bgcolor1); padding: 5px;z-index: 2}
+.venom-shell tagged x{  font-size: 13px; display: inline-block; line-height: 20px; background: var(--bgcolor1); padding: 5px; position: relative; z-index: 2; font-weight: bold; letter-spacing: 2px; font-family: var(--sans-font); text-transform: uppercase; font-weight: 700; }
+.venom-shell tagged a{text-decoration: none}
+
+.venom-shell xy{  color: transparent;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  -ms-background-clip: text;  background-image: var(--grad-1);
+}
+
+
+.domino-shell{width: 540px; border-radius: 10px; background: var(--bgcolor1) var(--grad-2); overflow: hidden; box-shadow: var(--shadow1); margin: 0px auto; position: relative}
+
+.domino-shell:before{content: ''; display: block; position: absolute; width: 500px; height: 500px; left: -50%; bottom: -250px; border-radius: 100%; border: 2px solid var(--bgcolor1)}
+.domino-shell:after{content: ''; display: block; position: absolute; width: 500px; height: 500px; top: -25%; right: -250px; border-radius: 100%; border: 2px solid var(--bgcolor1)}
+.domino-shell > *{position: relative; z-index: 2;}
+
+.domino-shell xy,.domino-shell b{
+color: transparent;  
+    background-clip: text;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    -ms-background-clip: text; 
+    background-image: var(--grad-1);}
+.domino-shell top{padding: 20px; background: var(--bgcolor1); display: block; font: 600 20px/100% var(--serif-font); border-bottom: 5px solid #000; border-image: var(--grad-1); border-image-slice: 5; text-align: right}
+.domino-shell top xy{background-clip: padding-box!important;border-radius: 4px; color: var(--link2); display: inline-block; padding: 10px; box-shadow: var(--bx-shdw); letter-spacing: 1px; text-transform: uppercase; box-shadow: var(--shadow1)}
+
+.domino-shell inner{display: block; border-bottom: 15px solid #000; border-image: var(--grad-1); border-image-slice: 5; padding: 35px;}
+
+.domino-shell pic{background: var(--bgcolor1); padding: 15px; border-radius: 10px;display: block; box-shadow: var(--shadow1); margin: 10px}
+.domino-shell pic img{border-radius: 10px; width: 100%; margin: 0px; padding: 0px;}
+
+.domino-shell words{background: var(--bgcolor1); padding: 25px; border-radius: 10px;display: block; box-shadow: var(--shadow1); margin: 10px; font: 400 15px/20px var(--sans-font); text-align: justify; color: var(--text)}
+.domino-shell words b{font-family: var(--mono-script); font-size: 16px; font-weight: 400}
+
+
+
+.domino-shell character{background: var(--bgcolor1) var(--grad-4); padding: 0px; border-radius: 10px;display: block; box-shadow: var(--shadow1); margin: 10px; overflow: hidden}
+.domino-shell character m{display: grid; padding: 20px; background: var(--pattern); gap: 20px; grid-template-columns: 110px auto }
+.domino-shell character m icon{}
+
+.domino-shell character icons {
+  width: 70px;
+  height: 70px;
+  padding: 4px;
+  border-radius: 5px; margin: 0px;
+}
+.domino-shell character div2{height: 70px; overflow-y: auto; display: block;  padding-right: 5px;}
+.domino-shell character scroll{ display: block; border-radius: 4px; background: var(--bgcolor1) var(--grad-08); flex: 1; padding: 20px; margin: 5px; font: 400 15px/20px var(--sans-font); text-transform: lowercase; text-align: justify; color: var(--text)}
+
+.domino-shell character div {
+  width: 90px;
+  height: 90px;
+  padding: 10px;
+  border-radius: 100%;
+  background: var(--bgcolor4) var(--grad-4);
+}
+
+.domino-shell character div icon {
+  display: block;
+  width: 90px;
+  height: 90px;
+  background-size: cover; 
+  background-position: center;
+  border-radius: 100%;
+  filter: grayscale(90%) contrast(75%) brightness(60%);}
+
+.domino-shell character t{display: block; background: var(--bgcolor1);;padding: 15px; font: 700 18px/100% var(--serif-font); border-bottom: 5px solid #000; border-image: var(--grad-1); border-image-slice: 5; text-align: right}
+.domino-shell t xy{background-clip: padding-box!important;border-radius: 4px; color: var(--link2); display: inline-block; padding: 10px; box-shadow: var(--shadow1); letter-spacing: 1px; text-transform: uppercase}
+
+
+.domino-shell character bt{display: block; background: var(--bgcolor4);;padding: 15px 15px 15px 0px; font: 400 12px/100% var(--mono-script); letter-spacing: 0px; border-top: 5px solid #000; border-image: var(--grad-1); border-image-slice: 5; color: var(--link); text-transform: lowercase; text-align: right}
+
+.domino-shell list{background: var(--bgcolor1); padding: 10px; border-radius: 10px;display: block; box-shadow: var(--shadow1); margin: 10px; overflow: hidden}
+
+.domino-shell list a{background: var(--bgcolor1) var(--grad-25); padding: 20px; border-radius: 4px;display: block; box-shadow: var(--shadow1); margin: 10px; overflow: hidden; font: 400 12px/100% var(--mono-script); color: var(--text); text-align: left}
+.domino-shell list xy{display: block;font: 500 23px/30px var(--accent-font); text-transform: lowercase;}
+
+.domino-shell inner2{display: grid;
+  grid-template-columns: 230px auto; border-bottom: 15px solid #000; border-image: var(--grad-1); border-image-slice: 5; padding: 35px;}
+
+.domino-shell inner2 pic{height: 250px; overflow: hidden;}
+.domino-shell inner2 pic img{height: 250px; width: 180px; object-fit: cover; border-radius: 10px;}
+.domino-shell inner2 scroll{ height: 230px; overflow-y: auto; display: block; padding-right: 5px; font: 400 15px/20px var(--sans-font); text-transform: lowercase; text-align: justify; color: var(--text)}
+
+
+.domino-shell bt{padding: 20px 10px;display: block; margin: 0px; overflow: hidden;  display: block; background: var(--bgcolor1); font: 13px/22px var(--mono-script); text-align: center; color: var(--text)}
